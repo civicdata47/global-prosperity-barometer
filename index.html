@@ -56,11 +56,152 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 30px auto;
             padding: 0 20px;
         }
         
+        /* Indicator Cards Detaliate */
+        .indicators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .indicator-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .indicator-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .indicator-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .indicator-header h2 {
+            font-size: 1.3em;
+            color: #333;
+        }
+        
+        .status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        
+        .status.critical {
+            background: #fee;
+            color: #dc2626;
+        }
+        
+        .status.warning {
+            background: #fef3c7;
+            color: #d97706;
+        }
+        
+        .status.moderate {
+            background: #fef3c7;
+            color: #d97706;
+        }
+        
+        .big-stat {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0;
+        }
+        
+        .big-stat .number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #ff416c;
+        }
+        
+        .big-stat .label {
+            font-size: 1em;
+            color: #666;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        
+        .progress {
+            height: 100%;
+            transition: width 0.3s;
+        }
+        
+        .stats-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+        
+        .stats-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+            color: #555;
+        }
+        
+        .stats-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .stats-list strong {
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .top-items {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+        
+        .top-items h4 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        .top-items ul {
+            list-style: none;
+        }
+        
+        .top-items li {
+            padding: 5px 0;
+            font-size: 0.9em;
+        }
+        
+        .view-more {
+            display: inline-block;
+            margin-top: 15px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .view-more:hover {
+            color: #ff416c;
+        }
+        
+        /* Dashboard Cards Simple */
         .dashboard {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -225,6 +366,10 @@
             .dashboard {
                 grid-template-columns: 1fr;
             }
+            
+            .indicators-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -241,10 +386,203 @@
 
     <div class="header">
         <h1>🌍 Barometru Global Prosperitate 2026</h1>
-        <p>Monitorizarea prosperității globale prin 10 piloni fundamentali</p>
+        <p>Monitorizarea transparentă a prosperității pentru 196 țări</p>
     </div>
 
     <div class="container">
+        <!-- Indicator Cards Detaliate -->
+        <section class="indicators-grid">
+            
+            <!-- 1. Conflicts -->
+            <div class="indicator-card conflict">
+                <div class="indicator-header">
+                    <h2>🔴 Conflicte & Securitate</h2>
+                    <span class="status critical">Critic</span>
+                </div>
+                <div class="indicator-stats">
+                    <div class="big-stat">
+                        <span class="number">27</span>
+                        <span class="label">Conflicte active</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%; background: #ef4444;"></div>
+                    </div>
+                </div>
+                <ul class="stats-list">
+                    <li>Decese (2025): <strong>237,000+</strong> morți în luptă</li>
+                    <li>Refugiați: <strong>114M</strong> deplasați global</li>
+                    <li>Zone risc înalt: <strong>43</strong> țări</li>
+                </ul>
+                <div class="top-items">
+                    <h4>Top 5 Conflicte:</h4>
+                    <ul>
+                        <li>🔴 Ucraina-Rusia (3 ani, 500k+ morți)</li>
+                        <li>🔴 Război Civil Sudan (120k+ morți)</li>
+                        <li>🔴 Israel-Gaza (Oct 2023-, 45k+ morți)</li>
+                        <li>🔴 Myanmar Intern (55k+ morți)</li>
+                        <li>🔴 Etiopia (600k+ morți)</li>
+                    </ul>
+                </div>
+                <a href="#conflicts" class="view-more">Vezi harta conflictelor →</a>
+            </div>
+
+            <!-- 2. Economic Health -->
+            <div class="indicator-card economic">
+                <div class="indicator-header">
+                    <h2>💰 Sănătate Economică</h2>
+                    <span class="status moderate">Moderat</span>
+                </div>
+                <div class="indicator-stats">
+                    <div class="big-stat">
+                        <span class="number">+2.8%</span>
+                        <span class="label">Creștere PIB global</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%; background: #f59e0b;"></div>
+                    </div>
+                </div>
+                <ul class="stats-list">
+                    <li>Sărăcie extremă: <strong>712M</strong> oameni (&lt;$2.15/zi)</li>
+                    <li>Șomaj: <strong>5.1%</strong> medie globală</li>
+                    <li>Inflație: <strong>4.2%</strong> medie</li>
+                </ul>
+                <div class="top-items">
+                    <h4>Criză Datorii:</h4>
+                    <ul>
+                        <li>🔴 15 țări peste 100% datorie/PIB</li>
+                        <li>🟡 45 țări 60-100%</li>
+                        <li>🟢 136 țări sustenabile</li>
+                    </ul>
+                </div>
+                <a href="#economic" class="view-more">Vezi date economice →</a>
+            </div>
+
+            <!-- 3. Global Health -->
+            <div class="indicator-card health">
+                <div class="indicator-header">
+                    <h2>🏥 Sănătate Globală</h2>
+                    <span class="status moderate">Îmbunătățire Lentă</span>
+                </div>
+                <div class="indicator-stats">
+                    <div class="big-stat">
+                        <span class="number">73.4</span>
+                        <span class="label">Speranță viață (ani)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 55%; background: #f59e0b;"></div>
+                    </div>
+                </div>
+                <ul class="stats-list">
+                    <li>Decese 2025: <strong>61.8M</strong> total</li>
+                    <li>Boli cardiovasculare: <strong>19.1M</strong></li>
+                    <li>Cancer: <strong>10.3M</strong></li>
+                    <li>Suicid: <strong>703,000</strong></li>
+                </ul>
+                <div class="top-items">
+                    <h4>Criză Sănătate Mintală:</h4>
+                    <ul>
+                        <li>🔴 Depresie: 280M oameni</li>
+                        <li>🔴 Anxietate: 301M oameni</li>
+                        <li>Acces îngrijire: 50% lipsă acces de bază</li>
+                    </ul>
+                </div>
+                <a href="#health" class="view-more">Vezi date sănătate →</a>
+            </div>
+
+            <!-- 4. Social Wellbeing -->
+            <div class="indicator-card social">
+                <div class="indicator-header">
+                    <h2>👥 Bunăstare Socială</h2>
+                    <span class="status warning">Sub Optim</span>
+                </div>
+                <div class="indicator-stats">
+                    <div class="big-stat">
+                        <span class="number">5.5/10</span>
+                        <span class="label">Fericire globală</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 35%; background: #ef4444;"></div>
+                    </div>
+                </div>
+                <ul class="stats-list">
+                    <li>Rată suicid: <strong>9.0</strong> la 100k (703k/an)</li>
+                    <li>Singurătate: <strong>33%</strong> se simt izolați</li>
+                    <li>Încredere socială: Scade în <strong>67</strong> țări</li>
+                </ul>
+                <div class="top-items">
+                    <h4>Demografie:</h4>
+                    <ul>
+                        <li>Rata natalitate: 17.5/1000 (scădere)</li>
+                        <li>Rata mortalitate: 7.8/1000</li>
+                        <li>Creștere populație: +0.9%</li>
+                    </ul>
+                </div>
+                <a href="#wellbeing" class="view-more">Vezi date bunăstare →</a>
+            </div>
+
+            <!-- 5. Governance -->
+            <div class="indicator-card governance">
+                <div class="indicator-header">
+                    <h2>🏛️ Guvernanță</h2>
+                    <span class="status warning">Regresie</span>
+                </div>
+                <div class="indicator-stats">
+                    <div class="big-stat">
+                        <span class="number">38%</span>
+                        <span class="label">Democrații (75 țări)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%; background: #f59e0b;"></div>
+                    </div>
+                </div>
+                <ul class="stats-list">
+                    <li>Regimuri hibride: <strong>44</strong> țări (22%)</li>
+                    <li>Autoritare: <strong>77</strong> țări (40%)</li>
+                </ul>
+                <div class="top-items">
+                    <h4>Corupție:</h4>
+                    <ul>
+                        <li>🔴 Severă: 68 țări</li>
+                        <li>🟡 Moderată: 89 țări</li>
+                        <li>🟢 Scăzută: 39 țări</li>
+                    </ul>
+                    <p style="margin-top: 0.5rem;">Libertatea presei scade în <strong>118</strong> țări</p>
+                </div>
+                <a href="#governance" class="view-more">Vezi indexul libertății →</a>
+            </div>
+
+            <!-- 6. Sustainability -->
+            <div class="indicator-card sustainability">
+                <div class="indicator-header">
+                    <h2>🌱 Sustenabilitate</h2>
+                    <span class="status critical">Eșec Critic</span>
+                </div>
+                <div class="indicator-stats">
+                    <div class="big-stat">
+                        <span class="number">23%</span>
+                        <span class="label">Pe drumul obiectivelor climatice</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 15%; background: #ef4444;"></div>
+                    </div>
+                </div>
+                <ul class="stats-list">
+                    <li>Emisii CO₂: <strong>37.4Gt</strong> (2025)</li>
+                    <li>Energie regenerabilă: <strong>29%</strong> mix global</li>
+                    <li>Pierdere păduri: <strong>10M</strong> hectare/an</li>
+                </ul>
+                <div class="top-items">
+                    <h4>Securitate Alimentară:</h4>
+                    <ul>
+                        <li>🔴 828M subnutriți</li>
+                        <li>🟡 2.4B insecuritate alimentară moderată</li>
+                    </ul>
+                </div>
+                <a href="#sustainability" class="view-more">Vezi sustenabilitate →</a>
+            </div>
+
+        </section>
+
         <!-- Dashboard Global -->
         <div class="dashboard">
             <div class="card">
@@ -262,7 +600,7 @@
             <div class="card">
                 <h3>⚠️ Țări în Criză</h3>
                 <div class="value">23</div>
-                <div class="trend down">Active conflict zones</div>
+                <div class="trend down">Zone conflict activ</div>
             </div>
             
             <div class="card">
