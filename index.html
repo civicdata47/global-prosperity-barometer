@@ -75,6 +75,7 @@
             padding: 25px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             transition: transform 0.3s;
+            cursor: pointer;
         }
         
         .indicator-card:hover {
@@ -201,7 +202,7 @@
             color: #ff416c;
         }
         
-        /* Dashboard Cards Simple */
+        /* Dashboard Cards Simple - 12 indici */
         .dashboard {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -215,6 +216,7 @@
             padding: 25px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             transition: transform 0.3s;
+            cursor: pointer;
         }
         
         .card:hover {
@@ -257,6 +259,7 @@
             padding-bottom: 10px;
         }
         
+        /* 10 Piloni */
         .pillars {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -390,7 +393,7 @@
     </div>
 
     <div class="container">
-        <!-- Indicator Cards Detaliate -->
+        <!-- Indicator Cards Detaliate - 6 mari -->
         <section class="indicators-grid">
             
             <!-- 1. Conflicts -->
@@ -423,7 +426,7 @@
                         <li>🔴 Etiopia (600k+ morți)</li>
                     </ul>
                 </div>
-                <a href="#conflicts" class="view-more">Vezi harta conflictelor →</a>
+                <a href="#conflicts" class="view-more">Vezi detalii →</a>
             </div>
 
             <!-- 2. Economic Health -->
@@ -454,7 +457,7 @@
                         <li>🟢 136 țări sustenabile</li>
                     </ul>
                 </div>
-                <a href="#economic" class="view-more">Vezi date economice →</a>
+                <a href="#economic" class="view-more">Vezi detalii →</a>
             </div>
 
             <!-- 3. Global Health -->
@@ -486,7 +489,7 @@
                         <li>Acces îngrijire: 50% lipsă acces de bază</li>
                     </ul>
                 </div>
-                <a href="#health" class="view-more">Vezi date sănătate →</a>
+                <a href="#health" class="view-more">Vezi detalii →</a>
             </div>
 
             <!-- 4. Social Wellbeing -->
@@ -517,7 +520,7 @@
                         <li>Creștere populație: +0.9%</li>
                     </ul>
                 </div>
-                <a href="#wellbeing" class="view-more">Vezi date bunăstare →</a>
+                <a href="#wellbeing" class="view-more">Vezi detalii →</a>
             </div>
 
             <!-- 5. Governance -->
@@ -548,7 +551,7 @@
                     </ul>
                     <p style="margin-top: 0.5rem;">Libertatea presei scade în <strong>118</strong> țări</p>
                 </div>
-                <a href="#governance" class="view-more">Vezi indexul libertății →</a>
+                <a href="#governance" class="view-more">Vezi detalii →</a>
             </div>
 
             <!-- 6. Sustainability -->
@@ -578,12 +581,12 @@
                         <li>🟡 2.4B insecuritate alimentară moderată</li>
                     </ul>
                 </div>
-                <a href="#sustainability" class="view-more">Vezi sustenabilitate →</a>
+                <a href="#sustainability" class="view-more">Vezi detalii →</a>
             </div>
 
         </section>
 
-        <!-- Dashboard Global -->
+        <!-- Dashboard Global - 12 Indici -->
         <div class="dashboard">
             <div class="card">
                 <h3>📊 Scor Global Mediu</h3>
@@ -619,7 +622,32 @@
                 <h3>💡 Inovație Tech</h3>
                 <div class="value">71.5</div>
                 <div class="trend up">↑ +4.3% digital growth</div>
-
+            </div>
+            
+            <div class="card">
+                <h3>📚 Educație Globală</h3>
+                <div class="value">87.3%</div>
+                <div class="trend up">↑ Literacy rate</div>
+            </div>
+            
+            <div class="card">
+                <h3>🗽 Libertate & Democrație</h3>
+                <div class="value">43%</div>
+                <div class="trend down">↓ În democrații complete</div>
+            </div>
+            
+            <div class="card">
+                <h3>🌐 Acces Digital</h3>
+                <div class="value">5.3B</div>
+                <div class="trend up">↑ 66% populație online</div>
+            </div>
+            
+            <div class="card">
+                <h3>⚖️ Inegalitate</h3>
+                <div class="value">38.5</div>
+                <div class="trend">→ Gini coefficient</div>
+            </div>
+            
             <div class="card">
                 <h3>😊 World Happiness</h3>
                 <div class="value">🇫🇮</div>
@@ -630,8 +658,6 @@
                 <h3>✨ Quality of Life</h3>
                 <div class="value">🇮🇸</div>
                 <div>Iceland - 95.2 (Top global)</div>
-            </div>
-
             </div>
         </div>
 
@@ -661,14 +687,19 @@
                 </div>
             </div>
             
-            <iframe src="map-embed.html" class="map-frame" title="World Prosperity Map Preview"></iframe>
+            <!-- Wrapper clickable peste hartă -->
+            <div style="position: relative; cursor: pointer;" onclick="window.open('map.html', '_blank')">
+                <iframe src="map-embed.html" class="map-frame" title="World Prosperity Map Preview" style="pointer-events: none;"></iframe>
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;"></div>
+            </div>
             
             <div class="map-link">
                 <a href="map.html" target="_blank">🔍 Deschide Harta în Pagină Completă</a>
             </div>
         </div>
 
-        <!-- 10 Piloni -->
+
+        <!-- Cei 10 Piloni ai Prosperității -->
         <div class="section">
             <h2>📌 Cei 10 Piloni ai Prosperității</h2>
             <div class="pillars">
