@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barometru Global Prosperitate 2026</title>
+    <meta name="description" content="Monitorizarea transparentă a prosperității pentru 196 țări - Date din World Bank, Freedom House, UN">
     <style>
         * {
             margin: 0;
@@ -12,752 +13,342 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #333;
-            line-height: 1.6;
-        }
-        
-        .lang-selector {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 10px 20px;
-            border-radius: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-        
-        .lang-selector select {
-            border: none;
-            background: transparent;
-            font-size: 16px;
-            cursor: pointer;
-            outline: none;
+            min-height: 100vh;
         }
         
         .header {
-            background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+            background: linear-gradient(135deg, #f93943 0%, #e74c3c 100%);
             color: white;
-            text-align: center;
             padding: 40px 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
         }
         
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
         }
         
         .header p {
             font-size: 1.2em;
-            opacity: 0.9;
+            opacity: 0.95;
+        }
+        
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
         
         .container {
             max-width: 1400px;
-            margin: 30px auto;
-            padding: 0 20px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
         
-        /* Indicator Cards Detaliate */
-        .indicators-grid {
+        .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-        
-        .indicator-card {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-        
-        .indicator-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .indicator-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-        
-        .indicator-header h2 {
-            font-size: 1.3em;
-            color: #333;
-        }
-        
-        .status {
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: bold;
-        }
-        
-        .status.critical {
-            background: #fee;
-            color: #dc2626;
-        }
-        
-        .status.warning {
-            background: #fef3c7;
-            color: #d97706;
-        }
-        
-        .status.moderate {
-            background: #fef3c7;
-            color: #d97706;
-        }
-        
-        .big-stat {
-            display: flex;
-            flex-direction: column;
-            margin: 15px 0;
-        }
-        
-        .big-stat .number {
-            font-size: 3em;
-            font-weight: bold;
-            color: #ff416c;
-        }
-        
-        .big-stat .label {
-            font-size: 1em;
-            color: #666;
-        }
-        
-        .progress-bar {
-            width: 100%;
-            height: 12px;
-            background: #e5e7eb;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 15px 0;
-        }
-        
-        .progress {
-            height: 100%;
-            transition: width 0.3s;
-        }
-        
-        .stats-list {
-            list-style: none;
-            margin: 15px 0;
-        }
-        
-        .stats-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #e5e7eb;
-            color: #555;
-        }
-        
-        .stats-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .stats-list strong {
-            color: #333;
-            font-weight: 600;
-        }
-        
-        .top-items {
-            margin: 15px 0;
-            padding: 15px;
-            background: #f9fafb;
-            border-radius: 8px;
-        }
-        
-        .top-items h4 {
-            margin-bottom: 10px;
-            color: #667eea;
-        }
-        
-        .top-items ul {
-            list-style: none;
-        }
-        
-        .top-items li {
-            padding: 5px 0;
-            font-size: 0.9em;
-        }
-        
-        .view-more {
-            display: inline-block;
-            margin-top: 15px;
-            color: #667eea;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .view-more:hover {
-            color: #ff416c;
-        }
-        
-        /* Dashboard Cards Simple - 12 indici */
-        .dashboard {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
             margin-bottom: 40px;
         }
         
         .card {
             background: white;
             border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-            cursor: pointer;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         
         .card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
         }
         
-        .card h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.1em;
-        }
-        
-        .card .value {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #ff416c;
-            margin: 10px 0;
-        }
-        
-        .card .trend {
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        .trend.up { color: #1a9850; }
-        .trend.down { color: #d73027; }
-        
-        .section {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin-bottom: 30px;
-        }
-        
-        .section h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #ff416c;
-            padding-bottom: 10px;
-        }
-        
-        /* 10 Piloni */
-        .pillars {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .pillar {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        
-        .pillar:hover {
-            transform: scale(1.05);
-        }
-        
-        .pillar .icon {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        
-        .map-container {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin-bottom: 30px;
-        }
-        
-        .map-container h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .map-frame {
-            width: 100%;
-            height: 600px;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .map-link {
-            text-align: center;
-            margin-top: 15px;
-        }
-        
-        .map-link a {
-            display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
-        
-        .map-link a:hover {
-            transform: translateY(-2px);
-        }
-        
-        .legend {
+        .card-header {
             display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 20px 0;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #eee;
         }
         
-        .legend-item {
+        .card-title {
+            font-size: 1.5em;
             display: flex;
             align-items: center;
             gap: 10px;
         }
         
-        .legend-color {
-            width: 30px;
-            height: 30px;
+        .badge {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        
+        .badge-critic {
+            background: #ffebee;
+            color: #c62828;
+        }
+        
+        .badge-moderat {
+            background: #fff3e0;
+            color: #e65100;
+        }
+        
+        .metric-big {
+            font-size: 3em;
+            font-weight: bold;
+            color: #f93943;
+            margin: 20px 0;
+        }
+        
+        .metric-big.positive {
+            color: #4caf50;
+        }
+        
+        .metric-label {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #eee;
             border-radius: 5px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f93943 0%, #ff6b6b 100%);
+            transition: width 1s ease;
+        }
+        
+        .progress-fill.warning {
+            background: linear-gradient(90deg, #ff9800 0%, #ffc107 100%);
+        }
+        
+        .stats-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .stats-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .stats-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .conflict-list {
+            margin-top: 20px;
+        }
+        
+        .conflict-item {
+            padding: 12px;
+            margin: 10px 0;
+            background: #fff5f5;
+            border-left: 4px solid #f93943;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .crisis-item {
+            padding: 12px;
+            margin: 10px 0;
+            background: #fffbf0;
+            border-left: 4px solid #ff9800;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .crisis-item.positive {
+            background: #f1f8f4;
+            border-left-color: #4caf50;
         }
         
         .footer {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin-top: 30px;
+            padding: 30px 20px;
+            color: white;
+            background: rgba(0,0,0,0.2);
+            margin-top: 40px;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
         }
         
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8em;
             }
-            
-            .map-frame {
-                height: 400px;
-            }
-            
-            .dashboard {
+            .cards {
                 grid-template-columns: 1fr;
             }
-            
-            .indicators-grid {
-                grid-template-columns: 1fr;
+            .language-selector {
+                position: static;
+                margin: 20px auto;
+                display: inline-block;
             }
         }
     </style>
 </head>
 <body>
-    <div class="lang-selector">
-        <select id="langSwitch">
-            <option value="ro">🇷🇴 RO</option>
-            <option value="en">🇬🇧 EN</option>
-            <option value="de">🇩🇪 DE</option>
-            <option value="fr">🇫🇷 FR</option>
-            <option value="es">🇪🇸 ES</option>
-        </select>
-    </div>
-
     <div class="header">
-        <h1>🌍 Barometru Global Prosperitate 2026</h1>
+        <div class="language-selector">🇷🇴 RO ▼</div>
+        <h1>
+            <span>🌍</span>
+            Barometru Global Prosperitate 2026
+        </h1>
         <p>Monitorizarea transparentă a prosperității pentru 196 țări</p>
     </div>
 
     <div class="container">
-        <!-- Indicator Cards Detaliate - 6 mari -->
-        <section class="indicators-grid">
-            
-            <!-- 1. Conflicts -->
-            <div class="indicator-card conflict">
-                <div class="indicator-header">
-                    <h2>🔴 Conflicte & Securitate</h2>
-                    <span class="status critical">Critic</span>
-                </div>
-                <div class="indicator-stats">
-                    <div class="big-stat">
-                        <span class="number">27</span>
-                        <span class="label">Conflicte active</span>
+        <div class="cards">
+            <!-- Card 1: Conflicte & Securitate -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        🔴 Conflicte & Securitate
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 70%; background: #ef4444;"></div>
+                    <span class="badge badge-critic">Critic</span>
+                </div>
+                
+                <div class="metric-big">27</div>
+                <div class="metric-label">Conflicte active</div>
+                
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 65%"></div>
+                </div>
+                
+                <div class="stats-list">
+                    <li>
+                        <span>Decese (2025):</span>
+                        <strong>237,000+ morți în luptă</strong>
+                    </li>
+                    <li>
+                        <span>Refugiați:</span>
+                        <strong>114M deplasați global</strong>
+                    </li>
+                    <li>
+                        <span>Zone risc înalt:</span>
+                        <strong>43 țări</strong>
+                    </li>
+                </div>
+                
+                <div class="conflict-list">
+                    <h3 style="margin: 20px 0 10px 0; color: #666;">Top 5 Conflicte:</h3>
+                    <div class="conflict-item">
+                        🔴 Ucraina-Rusia (3 ani, 500k+ morți)
+                    </div>
+                    <div class="conflict-item">
+                        🔴 Război Civil Sudan (120k+ morți)
+                    </div>
+                    <div class="conflict-item">
+                        🔴 Israel-Gaza (Oct 2023-, 45k+ morți)
+                    </div>
+                    <div class="conflict-item">
+                        🔴 Myanmar Intern (55k+ morți)
+                    </div>
+                    <div class="conflict-item">
+                        🔴 Etiopia (Tigray) (600k+ morți)
                     </div>
                 </div>
-                <ul class="stats-list">
-                    <li>Decese (2025): <strong>237,000+</strong> morți în luptă</li>
-                    <li>Refugiați: <strong>114M</strong> deplasați global</li>
-                    <li>Zone risc înalt: <strong>43</strong> țări</li>
-                </ul>
-                <div class="top-items">
-                    <h4>Top 5 Conflicte:</h4>
-                    <ul>
-                        <li>🔴 Ucraina-Rusia (3 ani, 500k+ morți)</li>
-                        <li>🔴 Război Civil Sudan (120k+ morți)</li>
-                        <li>🔴 Israel-Gaza (Oct 2023-, 45k+ morți)</li>
-                        <li>🔴 Myanmar Intern (55k+ morți)</li>
-                        <li>🔴 Etiopia (600k+ morți)</li>
-                    </ul>
-                </div>
-                <a href="#conflicts" class="view-more">Vezi detalii →</a>
             </div>
 
-            <!-- 2. Economic Health -->
-            <div class="indicator-card economic">
-                <div class="indicator-header">
-                    <h2>💰 Sănătate Economică</h2>
-                    <span class="status moderate">Moderat</span>
-                </div>
-                <div class="indicator-stats">
-                    <div class="big-stat">
-                        <span class="number">+2.8%</span>
-                        <span class="label">Creștere PIB global</span>
+            <!-- Card 2: Sănătate Economică -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        💰 Sănătate Economică
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 45%; background: #f59e0b;"></div>
+                    <span class="badge badge-moderat">Moderat</span>
+                </div>
+                
+                <div class="metric-big positive">+2.8%</div>
+                <div class="metric-label">Creștere PIB global</div>
+                
+                <div class="progress-bar">
+                    <div class="progress-fill warning" style="width: 70%"></div>
+                </div>
+                
+                <div class="stats-list">
+                    <li>
+                        <span>Sărăcie extremă:</span>
+                        <strong>712M oameni (&lt;$2.15/zi)</strong>
+                    </li>
+                    <li>
+                        <span>Șomaj:</span>
+                        <strong>5.1% medie globală</strong>
+                    </li>
+                    <li>
+                        <span>Inflație:</span>
+                        <strong>4.2% medie</strong>
+                    </li>
+                </div>
+                
+                <div class="conflict-list">
+                    <h3 style="margin: 20px 0 10px 0; color: #666;">Criză Datorii:</h3>
+                    <div class="crisis-item">
+                        🟡 15 țări peste 100% datorie/PIB
                     </div>
-                </div>
-                <ul class="stats-list">
-                    <li>Sărăcie extremă: <strong>712M</strong> oameni (&lt;$2.15/zi)</li>
-                    <li>Șomaj: <strong>5.1%</strong> medie globală</li>
-                    <li>Inflație: <strong>4.2%</strong> medie</li>
-                </ul>
-                <div class="top-items">
-                    <h4>Criză Datorii:</h4>
-                    <ul>
-                        <li>🔴 15 țări peste 100% datorie/PIB</li>
-                        <li>🟡 45 țări 60-100%</li>
-                        <li>🟢 136 țări sustenabile</li>
-                    </ul>
-                </div>
-                <a href="#economic" class="view-more">Vezi detalii →</a>
-            </div>
-
-            <!-- 3. Global Health -->
-            <div class="indicator-card health">
-                <div class="indicator-header">
-                    <h2>🏥 Sănătate Globală</h2>
-                    <span class="status moderate">Îmbunătățire Lentă</span>
-                </div>
-                <div class="indicator-stats">
-                    <div class="big-stat">
-                        <span class="number">73.4</span>
-                        <span class="label">Speranță viață (ani)</span>
+                    <div class="crisis-item">
+                        🟡 45 țări 60-100%
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 55%; background: #f59e0b;"></div>
+                    <div class="crisis-item positive">
+                        🟢 136 țări sustenabile
                     </div>
-                </div>
-                <ul class="stats-list">
-                    <li>Decese 2025: <strong>61.8M</strong> total</li>
-                    <li>Boli cardiovasculare: <strong>19.1M</strong></li>
-                    <li>Cancer: <strong>10.3M</strong></li>
-                    <li>Suicid: <strong>703,000</strong></li>
-                </ul>
-                <div class="top-items">
-                    <h4>Criză Sănătate Mintală:</h4>
-                    <ul>
-                        <li>🔴 Depresie: 280M oameni</li>
-                        <li>🔴 Anxietate: 301M oameni</li>
-                        <li>Acces îngrijire: 50% lipsă acces de bază</li>
-                    </ul>
-                </div>
-                <a href="#health" class="view-more">Vezi detalii →</a>
-            </div>
-
-            <!-- 4. Social Wellbeing -->
-            <div class="indicator-card social">
-                <div class="indicator-header">
-                    <h2>👥 Bunăstare Socială</h2>
-                    <span class="status warning">Sub Optim</span>
-                </div>
-                <div class="indicator-stats">
-                    <div class="big-stat">
-                        <span class="number">5.5/10</span>
-                        <span class="label">Fericire globală</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 35%; background: #ef4444;"></div>
-                    </div>
-                </div>
-                <ul class="stats-list">
-                    <li>Rată suicid: <strong>9.0</strong> la 100k (703k/an)</li>
-                    <li>Singurătate: <strong>33%</strong> se simt izolați</li>
-                    <li>Încredere socială: Scade în <strong>67</strong> țări</li>
-                </ul>
-                <div class="top-items">
-                    <h4>Demografie:</h4>
-                    <ul>
-                        <li>Rata natalitate: 17.5/1000 (scădere)</li>
-                        <li>Rata mortalitate: 7.8/1000</li>
-                        <li>Creștere populație: +0.9%</li>
-                    </ul>
-                </div>
-                <a href="#wellbeing" class="view-more">Vezi detalii →</a>
-            </div>
-
-            <!-- 5. Governance -->
-            <div class="indicator-card governance">
-                <div class="indicator-header">
-                    <h2>🏛️ Guvernanță</h2>
-                    <span class="status warning">Regresie</span>
-                </div>
-                <div class="indicator-stats">
-                    <div class="big-stat">
-                        <span class="number">38%</span>
-                        <span class="label">Democrații (75 țări)</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 40%; background: #f59e0b;"></div>
-                    </div>
-                </div>
-                <ul class="stats-list">
-                    <li>Regimuri hibride: <strong>44</strong> țări (22%)</li>
-                    <li>Autoritare: <strong>77</strong> țări (40%)</li>
-                </ul>
-                <div class="top-items">
-                    <h4>Corupție:</h4>
-                    <ul>
-                        <li>🔴 Severă: 68 țări</li>
-                        <li>🟡 Moderată: 89 țări</li>
-                        <li>🟢 Scăzută: 39 țări</li>
-                    </ul>
-                    <p style="margin-top: 0.5rem;">Libertatea presei scade în <strong>118</strong> țări</p>
-                </div>
-                <a href="#governance" class="view-more">Vezi detalii →</a>
-            </div>
-
-            <!-- 6. Sustainability -->
-            <div class="indicator-card sustainability">
-                <div class="indicator-header">
-                    <h2>🌱 Sustenabilitate</h2>
-                    <span class="status critical">Eșec Critic</span>
-                </div>
-                <div class="indicator-stats">
-                    <div class="big-stat">
-                        <span class="number">23%</span>
-                        <span class="label">Pe drumul obiectivelor climatice</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 15%; background: #ef4444;"></div>
-                    </div>
-                </div>
-                <ul class="stats-list">
-                    <li>Emisii CO₂: <strong>37.4Gt</strong> (2025)</li>
-                    <li>Energie regenerabilă: <strong>29%</strong> mix global</li>
-                    <li>Pierdere păduri: <strong>10M</strong> hectare/an</li>
-                </ul>
-                <div class="top-items">
-                    <h4>Securitate Alimentară:</h4>
-                    <ul>
-                        <li>🔴 828M subnutriți</li>
-                        <li>🟡 2.4B insecuritate alimentară moderată</li>
-                    </ul>
-                </div>
-                <a href="#sustainability" class="view-more">Vezi detalii →</a>
-            </div>
-
-        </section>
-
-        <!-- Dashboard Global - 12 Indici -->
-        <div class="dashboard">
-            <div class="card">
-                <h3>📊 Scor Global Mediu</h3>
-                <div class="value">68.4</div>
-                <div class="trend up">↑ +2.1% față de 2025</div>
-            </div>
-            
-            <div class="card">
-                <h3>🏆 Top Performer</h3>
-                <div class="value">🇳🇴</div>
-                <div>Norway - 92.0</div>
-            </div>
-            
-            <div class="card">
-                <h3>⚠️ Țări în Criză</h3>
-                <div class="value">23</div>
-                <div class="trend down">Zone conflict activ</div>
-            </div>
-            
-            <div class="card">
-                <h3>🌱 Sustenabilitate</h3>
-                <div class="value">64.2</div>
-                <div class="trend up">↑ Progress mediu/înalt</div>
-            </div>
-            
-            <div class="card">
-                <h3>🕊️ Indice Pace</h3>
-                <div class="value">73.8</div>
-                <div class="trend">→ Stabil 2026</div>
-            </div>
-            
-            <div class="card">
-                <h3>💡 Inovație Tech</h3>
-                <div class="value">71.5</div>
-                <div class="trend up">↑ +4.3% digital growth</div>
-            </div>
-            
-            <div class="card">
-                <h3>📚 Educație Globală</h3>
-                <div class="value">87.3%</div>
-                <div class="trend up">↑ Literacy rate</div>
-            </div>
-            
-            <div class="card">
-                <h3>🗽 Libertate & Democrație</h3>
-                <div class="value">43%</div>
-                <div class="trend down">↓ În democrații complete</div>
-            </div>
-            
-            <div class="card">
-                <h3>🌐 Acces Digital</h3>
-                <div class="value">5.3B</div>
-                <div class="trend up">↑ 66% populație online</div>
-            </div>
-            
-            <div class="card">
-                <h3>⚖️ Inegalitate</h3>
-                <div class="value">38.5</div>
-                <div class="trend">→ Gini coefficient</div>
-            </div>
-            
-            <div class="card">
-                <h3>😊 World Happiness</h3>
-                <div class="value">🇫🇮</div>
-                <div>Finland - 7.8/10 (7 ani #1)</div>
-            </div>
-            
-            <div class="card">
-                <h3>✨ Quality of Life</h3>
-                <div class="value">🇮🇸</div>
-                <div>Iceland - 95.2 (Top global)</div>
-            </div>
-        </div>
-
-        <!-- Harta Interactivă -->
-        <div class="map-container">
-            <h2>🗺️ Harta Interactivă Globală</h2>
-            <div class="legend">
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #1a9850;"></div>
-                    <span>Thriving (80-100)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #91cf60;"></div>
-                    <span>Progressing (60-79)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #fee08b;"></div>
-                    <span>Challenged (40-59)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #fc8d59;"></div>
-                    <span>Struggling (20-39)</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: #d73027;"></div>
-                    <span>Crisis (0-19)</span>
-                </div>
-            </div>
-            
-            <!-- Wrapper clickable peste hartă -->
-            <div style="position: relative; cursor: pointer;" onclick="window.open('map.html', '_blank')">
-                <iframe src="map-embed.html" class="map-frame" title="World Prosperity Map Preview" style="pointer-events: none;"></iframe>
-                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;"></div>
-            </div>
-            
-            <div class="map-link">
-                <a href="map.html" target="_blank">🔍 Deschide Harta în Pagină Completă</a>
-            </div>
-        </div>
-
-        <!-- Cei 12 Piloni ai Prosperității -->
-        <div class="section">
-            <h2>📌 Cei 12 Piloni ai Prosperității</h2>
-            <div class="pillars">
-                <div class="pillar">
-                    <div class="icon">📚</div>
-                    <div>Educație & Cunoaștere</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">🏥</div>
-                    <div>Sănătate & Longevitate</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">🌱</div>
-                    <div>Mediu & Sustenabilitate</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">💼</div>
-                    <div>Economie & Inovație</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">⚖️</div>
-                    <div>Democrație & Justiție</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">🕊️</div>
-                    <div>Pace & Securitate</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">🎭</div>
-                    <div>Cultură & Identitate</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">🔬</div>
-                    <div>Tehnologie & Infrastructură</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">🤝</div>
-                    <div>Coeziune Socială</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">🗽</div>
-                    <div>Libertăți & Drepturi</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">⚡</div>
-                    <div>Energie & Resurse</div>
-                </div>
-                <div class="pillar">
-                    <div class="icon">🏠</div>
-                    <div>Housing & Dezvoltare Urbană</div>
                 </div>
             </div>
         </div>
+    </div>
 
-
-        <div class="footer">
-            <p>© 2026 Global Prosperity Barometer | Data surse: World Bank, UN, OECD, Freedom House</p>
-            <p>Open Data Platform | Actualizat: Februarie 2026</p>
-        </div>
+    <div class="footer">
+        <p>© 2026 Global Prosperity Barometer | Data surse: World Bank, UN, OECD, Freedom House</p>
+        <p>
+            <a href="impressum.html">Impressum</a> | 
+            <a href="privacy.html">Privacy</a> | 
+            <a href="mailto:globaldata9@protonmail.com">✉️ Contact</a>
+        </p>
+        <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">
+            Open Data Platform | Actualizat: Februarie 2026
+        </p>
     </div>
 </body>
 </html>
