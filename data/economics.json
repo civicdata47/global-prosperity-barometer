@@ -2698,5 +2698,905 @@
       "Fish",
       "Groundnuts"
     ]
+  },
+  "dr_congo": {
+    "gdp": 64.0,
+    "gdp_per_capita": 650,
+    "public_debt_pct": 21.5,
+    "revenue_pct_gdp": 11.2,
+    "expense_pct_gdp": 13.8,
+    "unemployment": 4.5,
+    "inflation": 9.2,
+    "gni_per_capita": 590,
+    "revenue": {
+      "taxes": 52.0,
+      "social_contributions": 3.0,
+      "grants": 28.0,
+      "other": 17.0
+    },
+    "expenditure": {
+      "social_protection": 4.0,
+      "health": 3.5,
+      "education": 8.0,
+      "defense": 6.5,
+      "infrastructure": 22.0,
+      "public_services": 18.0,
+      "debt_service": 12.0,
+      "other": 26.0
+    },
+    "exports": 17.8,
+    "imports": 14.5,
+    "trade_balance": 3.3,
+    "exports_pct_gdp": 27.8,
+    "top_exports": [
+      "Cobalt",
+      "Copper",
+      "Gold",
+      "Diamonds"
+    ]
+  },
+  "cote_divoire": {
+    "gdp": 78.0,
+    "gdp_per_capita": 2700,
+    "public_debt_pct": 56.8,
+    "revenue_pct_gdp": 15.5,
+    "expense_pct_gdp": 18.2,
+    "unemployment": 3.5,
+    "inflation": 4.5,
+    "gni_per_capita": 2520,
+    "revenue": {
+      "taxes": 62.0,
+      "social_contributions": 5.5,
+      "grants": 8.0,
+      "other": 24.5
+    },
+    "expenditure": {
+      "social_protection": 6.5,
+      "health": 5.0,
+      "education": 17.5,
+      "defense": 5.5,
+      "infrastructure": 20.0,
+      "public_services": 15.0,
+      "debt_service": 18.5,
+      "other": 12.0
+    },
+    "exports": 16.8,
+    "imports": 14.2,
+    "trade_balance": 2.6,
+    "exports_pct_gdp": 21.5,
+    "top_exports": [
+      "Cocoa",
+      "Cashews",
+      "Rubber",
+      "Petroleum"
+    ]
+  },
+  "uganda": {
+    "gdp": 50.0,
+    "gdp_per_capita": 1050,
+    "public_debt_pct": 48.5,
+    "revenue_pct_gdp": 13.8,
+    "expense_pct_gdp": 17.5,
+    "unemployment": 2.8,
+    "inflation": 5.3,
+    "gni_per_capita": 960,
+    "revenue": {
+      "taxes": 58.0,
+      "social_contributions": 2.5,
+      "grants": 18.5,
+      "other": 21.0
+    },
+    "expenditure": {
+      "social_protection": 5.0,
+      "health": 4.5,
+      "education": 11.5,
+      "defense": 8.0,
+      "infrastructure": 22.5,
+      "public_services": 18.0,
+      "debt_service": 16.5,
+      "other": 14.0
+    },
+    "exports": 4.8,
+    "imports": 8.5,
+    "trade_balance": -3.7,
+    "exports_pct_gdp": 9.6,
+    "top_exports": [
+      "Coffee",
+      "Gold",
+      "Fish",
+      "Tobacco"
+    ]
+  },
+  "angola": {
+    "gdp": 75.0,
+    "gdp_per_capita": 2100,
+    "public_debt_pct": 84.5,
+    "revenue_pct_gdp": 20.8,
+    "expense_pct_gdp": 22.5,
+    "unemployment": 30.5,
+    "inflation": 13.8,
+    "gni_per_capita": 1920,
+    "revenue": {
+      "taxes": 38.0,
+      "social_contributions": 5.0,
+      "grants": 1.5,
+      "other": 55.5
+    },
+    "expenditure": {
+      "social_protection": 9.0,
+      "health": 4.0,
+      "education": 6.5,
+      "defense": 8.5,
+      "infrastructure": 18.0,
+      "public_services": 20.0,
+      "debt_service": 22.0,
+      "other": 12.0
+    },
+    "exports": 33.5,
+    "imports": 16.8,
+    "trade_balance": 16.7,
+    "exports_pct_gdp": 44.7,
+    "top_exports": [
+      "Crude Oil",
+      "Diamonds",
+      "Natural Gas",
+      "Coffee"
+    ]
+  },
+  "mozambique": {
+    "gdp": 20.0,
+    "gdp_per_capita": 600,
+    "public_debt_pct": 101.0,
+    "revenue_pct_gdp": 24.5,
+    "expense_pct_gdp": 30.2,
+    "unemployment": 3.9,
+    "inflation": 6.5,
+    "gni_per_capita": 540,
+    "revenue": {
+      "taxes": 55.0,
+      "social_contributions": 3.0,
+      "grants": 24.0,
+      "other": 18.0
+    },
+    "expenditure": {
+      "social_protection": 5.5,
+      "health": 5.0,
+      "education": 18.0,
+      "defense": 4.0,
+      "infrastructure": 16.5,
+      "public_services": 15.0,
+      "debt_service": 22.0,
+      "other": 14.0
+    },
+    "exports": 7.2,
+    "imports": 10.8,
+    "trade_balance": -3.6,
+    "exports_pct_gdp": 36.0,
+    "top_exports": [
+      "Aluminum",
+      "Coal",
+      "Natural Gas",
+      "Tobacco"
+    ]
+  },
+  "cameroon": {
+    "gdp": 47.0,
+    "gdp_per_capita": 1700,
+    "public_debt_pct": 45.8,
+    "revenue_pct_gdp": 14.5,
+    "expense_pct_gdp": 16.8,
+    "unemployment": 3.8,
+    "inflation": 5.8,
+    "gni_per_capita": 1560,
+    "revenue": {
+      "taxes": 61.0,
+      "social_contributions": 4.0,
+      "grants": 9.0,
+      "other": 26.0
+    },
+    "expenditure": {
+      "social_protection": 4.5,
+      "health": 3.5,
+      "education": 12.0,
+      "defense": 7.5,
+      "infrastructure": 20.0,
+      "public_services": 19.0,
+      "debt_service": 16.5,
+      "other": 17.0
+    },
+    "exports": 7.5,
+    "imports": 8.8,
+    "trade_balance": -1.3,
+    "exports_pct_gdp": 16.0,
+    "top_exports": [
+      "Crude Oil",
+      "Lumber",
+      "Cocoa",
+      "Aluminum"
+    ]
+  },
+  "zambia": {
+    "gdp": 29.0,
+    "gdp_per_capita": 1450,
+    "public_debt_pct": 95.5,
+    "revenue_pct_gdp": 18.2,
+    "expense_pct_gdp": 23.5,
+    "unemployment": 12.5,
+    "inflation": 10.2,
+    "gni_per_capita": 1300,
+    "revenue": {
+      "taxes": 57.5,
+      "social_contributions": 3.5,
+      "grants": 14.0,
+      "other": 25.0
+    },
+    "expenditure": {
+      "social_protection": 7.0,
+      "health": 6.5,
+      "education": 14.0,
+      "defense": 5.0,
+      "infrastructure": 15.5,
+      "public_services": 14.5,
+      "debt_service": 24.5,
+      "other": 13.0
+    },
+    "exports": 10.5,
+    "imports": 8.2,
+    "trade_balance": 2.3,
+    "exports_pct_gdp": 36.2,
+    "top_exports": [
+      "Copper",
+      "Cobalt",
+      "Tobacco",
+      "Gems"
+    ]
+  },
+  "myanmar": {
+    "gdp": 60.0,
+    "gdp_per_capita": 1100,
+    "public_debt_pct": 42.0,
+    "revenue_pct_gdp": 15.0,
+    "expense_pct_gdp": 18.5,
+    "unemployment": 1.6,
+    "inflation": 8.5,
+    "gni_per_capita": 1000,
+    "revenue": {
+      "taxes": 42.0,
+      "social_contributions": 3.0,
+      "grants": 12.0,
+      "other": 43.0
+    },
+    "expenditure": {
+      "social_protection": 3.0,
+      "health": 3.5,
+      "education": 8.0,
+      "defense": 18.0,
+      "infrastructure": 20.0,
+      "public_services": 16.5,
+      "debt_service": 14.0,
+      "other": 17.0
+    },
+    "exports": 17.5,
+    "imports": 19.2,
+    "trade_balance": -1.7,
+    "exports_pct_gdp": 29.2,
+    "top_exports": [
+      "Natural Gas",
+      "Garments",
+      "Jade",
+      "Rice"
+    ]
+  },
+  "sri_lanka": {
+    "gdp": 75.0,
+    "gdp_per_capita": 3400,
+    "public_debt_pct": 115.0,
+    "revenue_pct_gdp": 9.5,
+    "expense_pct_gdp": 16.8,
+    "unemployment": 5.2,
+    "inflation": 12.5,
+    "gni_per_capita": 3200,
+    "revenue": {
+      "taxes": 72.0,
+      "social_contributions": 4.5,
+      "grants": 5.5,
+      "other": 18.0
+    },
+    "expenditure": {
+      "social_protection": 12.5,
+      "health": 7.5,
+      "education": 9.0,
+      "defense": 8.5,
+      "infrastructure": 12.0,
+      "public_services": 13.5,
+      "debt_service": 28.0,
+      "other": 9.0
+    },
+    "exports": 13.5,
+    "imports": 18.2,
+    "trade_balance": -4.7,
+    "exports_pct_gdp": 18.0,
+    "top_exports": [
+      "Tea",
+      "Garments",
+      "Rubber",
+      "Coconut"
+    ]
+  },
+  "nepal": {
+    "gdp": 42.0,
+    "gdp_per_capita": 1380,
+    "public_debt_pct": 42.5,
+    "revenue_pct_gdp": 22.8,
+    "expense_pct_gdp": 28.5,
+    "unemployment": 11.4,
+    "inflation": 6.8,
+    "gni_per_capita": 1280,
+    "revenue": {
+      "taxes": 68.0,
+      "social_contributions": 2.5,
+      "grants": 10.5,
+      "other": 19.0
+    },
+    "expenditure": {
+      "social_protection": 10.5,
+      "health": 6.0,
+      "education": 13.0,
+      "defense": 5.5,
+      "infrastructure": 22.0,
+      "public_services": 18.0,
+      "debt_service": 8.0,
+      "other": 17.0
+    },
+    "exports": 2.1,
+    "imports": 15.8,
+    "trade_balance": -13.7,
+    "exports_pct_gdp": 5.0,
+    "top_exports": [
+      "Carpets",
+      "Garments",
+      "Iron & Steel",
+      "Herbs"
+    ]
+  },
+  "cambodia": {
+    "gdp": 32.0,
+    "gdp_per_capita": 1890,
+    "public_debt_pct": 36.0,
+    "revenue_pct_gdp": 21.5,
+    "expense_pct_gdp": 23.0,
+    "unemployment": 0.5,
+    "inflation": 3.0,
+    "gni_per_capita": 1740,
+    "revenue": {
+      "taxes": 64.0,
+      "social_contributions": 2.0,
+      "grants": 12.0,
+      "other": 22.0
+    },
+    "expenditure": {
+      "social_protection": 4.5,
+      "health": 5.5,
+      "education": 11.0,
+      "defense": 10.5,
+      "infrastructure": 22.5,
+      "public_services": 18.5,
+      "debt_service": 10.5,
+      "other": 17.0
+    },
+    "exports": 20.5,
+    "imports": 24.2,
+    "trade_balance": -3.7,
+    "exports_pct_gdp": 64.1,
+    "top_exports": [
+      "Garments",
+      "Footwear",
+      "Rice",
+      "Rubber"
+    ]
+  },
+  "ecuador": {
+    "gdp": 115.0,
+    "gdp_per_capita": 6400,
+    "public_debt_pct": 57.0,
+    "revenue_pct_gdp": 33.5,
+    "expense_pct_gdp": 36.0,
+    "unemployment": 4.2,
+    "inflation": 2.8,
+    "gni_per_capita": 5900,
+    "revenue": {
+      "taxes": 52.5,
+      "social_contributions": 16.0,
+      "grants": 1.0,
+      "other": 30.5
+    },
+    "expenditure": {
+      "social_protection": 16.0,
+      "health": 9.5,
+      "education": 13.0,
+      "defense": 6.0,
+      "infrastructure": 14.5,
+      "public_services": 16.5,
+      "debt_service": 14.0,
+      "other": 10.5
+    },
+    "exports": 32.5,
+    "imports": 28.8,
+    "trade_balance": 3.7,
+    "exports_pct_gdp": 28.3,
+    "top_exports": [
+      "Crude Oil",
+      "Bananas",
+      "Shrimp",
+      "Cacao"
+    ]
+  },
+  "guatemala": {
+    "gdp": 102.0,
+    "gdp_per_capita": 5700,
+    "public_debt_pct": 30.5,
+    "revenue_pct_gdp": 12.2,
+    "expense_pct_gdp": 14.5,
+    "unemployment": 2.5,
+    "inflation": 4.8,
+    "gni_per_capita": 5200,
+    "revenue": {
+      "taxes": 72.0,
+      "social_contributions": 5.0,
+      "grants": 3.0,
+      "other": 20.0
+    },
+    "expenditure": {
+      "social_protection": 7.5,
+      "health": 8.0,
+      "education": 16.5,
+      "defense": 3.5,
+      "infrastructure": 18.0,
+      "public_services": 20.5,
+      "debt_service": 12.5,
+      "other": 13.5
+    },
+    "exports": 14.5,
+    "imports": 24.8,
+    "trade_balance": -10.3,
+    "exports_pct_gdp": 14.2,
+    "top_exports": [
+      "Coffee",
+      "Bananas",
+      "Sugar",
+      "Textiles"
+    ]
+  },
+  "jamaica": {
+    "gdp": 18.0,
+    "gdp_per_capita": 6200,
+    "public_debt_pct": 83.0,
+    "revenue_pct_gdp": 30.5,
+    "expense_pct_gdp": 32.0,
+    "unemployment": 6.8,
+    "inflation": 7.2,
+    "gni_per_capita": 5800,
+    "revenue": {
+      "taxes": 70.0,
+      "social_contributions": 5.5,
+      "grants": 2.0,
+      "other": 22.5
+    },
+    "expenditure": {
+      "social_protection": 10.0,
+      "health": 9.5,
+      "education": 14.0,
+      "defense": 2.5,
+      "infrastructure": 12.0,
+      "public_services": 16.0,
+      "debt_service": 25.0,
+      "other": 11.0
+    },
+    "exports": 5.8,
+    "imports": 8.5,
+    "trade_balance": -2.7,
+    "exports_pct_gdp": 32.2,
+    "top_exports": [
+      "Alumina",
+      "Bauxite",
+      "Sugar",
+      "Rum"
+    ]
+  },
+  "slovakia": {
+    "gdp": 130.0,
+    "gdp_per_capita": 23800,
+    "public_debt_pct": 57.8,
+    "revenue_pct_gdp": 40.5,
+    "expense_pct_gdp": 43.2,
+    "unemployment": 6.0,
+    "inflation": 3.5,
+    "gni_per_capita": 22500,
+    "revenue": {
+      "taxes": 44.0,
+      "social_contributions": 38.5,
+      "grants": 4.0,
+      "other": 13.5
+    },
+    "expenditure": {
+      "social_protection": 35.0,
+      "health": 14.5,
+      "education": 10.5,
+      "defense": 4.0,
+      "infrastructure": 10.0,
+      "public_services": 13.0,
+      "debt_service": 5.5,
+      "other": 7.5
+    },
+    "exports": 112.5,
+    "imports": 108.0,
+    "trade_balance": 4.5,
+    "exports_pct_gdp": 86.5,
+    "top_exports": [
+      "Vehicles",
+      "Electronics",
+      "Machinery",
+      "Iron & Steel"
+    ]
+  },
+  "latvia": {
+    "gdp": 44.0,
+    "gdp_per_capita": 23300,
+    "public_debt_pct": 44.5,
+    "revenue_pct_gdp": 37.8,
+    "expense_pct_gdp": 40.2,
+    "unemployment": 6.8,
+    "inflation": 2.5,
+    "gni_per_capita": 21800,
+    "revenue": {
+      "taxes": 48.0,
+      "social_contributions": 32.0,
+      "grants": 6.5,
+      "other": 13.5
+    },
+    "expenditure": {
+      "social_protection": 28.5,
+      "health": 12.0,
+      "education": 13.5,
+      "defense": 5.5,
+      "infrastructure": 12.0,
+      "public_services": 14.0,
+      "debt_service": 4.0,
+      "other": 10.5
+    },
+    "exports": 22.5,
+    "imports": 24.8,
+    "trade_balance": -2.3,
+    "exports_pct_gdp": 51.1,
+    "top_exports": [
+      "Wood",
+      "Machinery",
+      "Metals",
+      "Food Products"
+    ]
+  },
+  "iraq": {
+    "gdp": 267.0,
+    "gdp_per_capita": 6400,
+    "public_debt_pct": 44.0,
+    "revenue_pct_gdp": 38.5,
+    "expense_pct_gdp": 42.0,
+    "unemployment": 15.5,
+    "inflation": 4.5,
+    "gni_per_capita": 5800,
+    "revenue": {
+      "taxes": 8.0,
+      "social_contributions": 2.5,
+      "grants": 0.5,
+      "other": 89.0
+    },
+    "expenditure": {
+      "social_protection": 18.0,
+      "health": 5.0,
+      "education": 8.5,
+      "defense": 14.5,
+      "infrastructure": 15.0,
+      "public_services": 20.0,
+      "debt_service": 8.0,
+      "other": 11.0
+    },
+    "exports": 102.5,
+    "imports": 58.0,
+    "trade_balance": 44.5,
+    "exports_pct_gdp": 38.4,
+    "top_exports": [
+      "Crude Oil",
+      "Refined Petroleum",
+      "Gold",
+      "Dates"
+    ]
+  },
+  "lebanon": {
+    "gdp": 22.0,
+    "gdp_per_capita": 3900,
+    "public_debt_pct": 172.0,
+    "revenue_pct_gdp": 12.5,
+    "expense_pct_gdp": 18.0,
+    "unemployment": 29.6,
+    "inflation": 171.2,
+    "gni_per_capita": 3500,
+    "revenue": {
+      "taxes": 55.0,
+      "social_contributions": 8.0,
+      "grants": 12.0,
+      "other": 25.0
+    },
+    "expenditure": {
+      "social_protection": 8.0,
+      "health": 6.5,
+      "education": 7.5,
+      "defense": 12.0,
+      "infrastructure": 5.0,
+      "public_services": 15.0,
+      "debt_service": 35.0,
+      "other": 11.0
+    },
+    "exports": 4.5,
+    "imports": 14.8,
+    "trade_balance": -10.3,
+    "exports_pct_gdp": 20.5,
+    "top_exports": [
+      "Jewelry",
+      "Chemicals",
+      "Food Products",
+      "Textiles"
+    ]
+  },
+  "kuwait": {
+    "gdp": 165.0,
+    "gdp_per_capita": 37000,
+    "public_debt_pct": 8.5,
+    "revenue_pct_gdp": 58.0,
+    "expense_pct_gdp": 52.5,
+    "unemployment": 2.1,
+    "inflation": 3.8,
+    "gni_per_capita": 35500,
+    "revenue": {
+      "taxes": 3.5,
+      "social_contributions": 4.0,
+      "grants": 0.0,
+      "other": 92.5
+    },
+    "expenditure": {
+      "social_protection": 22.0,
+      "health": 8.5,
+      "education": 12.0,
+      "defense": 15.5,
+      "infrastructure": 10.0,
+      "public_services": 18.0,
+      "debt_service": 2.0,
+      "other": 12.0
+    },
+    "exports": 72.5,
+    "imports": 38.5,
+    "trade_balance": 34.0,
+    "exports_pct_gdp": 43.9,
+    "top_exports": [
+      "Crude Oil",
+      "Refined Petroleum",
+      "Petrochemicals",
+      "Fertilizers"
+    ]
+  },
+  "papua_new_guinea": {
+    "gdp": 32.0,
+    "gdp_per_capita": 3200,
+    "public_debt_pct": 48.0,
+    "revenue_pct_gdp": 14.5,
+    "expense_pct_gdp": 17.8,
+    "unemployment": 2.6,
+    "inflation": 5.5,
+    "gni_per_capita": 2900,
+    "revenue": {
+      "taxes": 56.0,
+      "social_contributions": 2.0,
+      "grants": 16.0,
+      "other": 26.0
+    },
+    "expenditure": {
+      "social_protection": 3.5,
+      "health": 5.5,
+      "education": 12.0,
+      "defense": 4.0,
+      "infrastructure": 22.0,
+      "public_services": 20.0,
+      "debt_service": 15.0,
+      "other": 18.0
+    },
+    "exports": 12.5,
+    "imports": 7.8,
+    "trade_balance": 4.7,
+    "exports_pct_gdp": 39.1,
+    "top_exports": [
+      "LNG",
+      "Gold",
+      "Copper",
+      "Palm Oil"
+    ]
+  },
+  "bolivia": {
+    "gdp": 46.0,
+    "gdp_per_capita": 3800,
+    "public_debt_pct": 80.5,
+    "revenue_pct_gdp": 28.5,
+    "expense_pct_gdp": 33.0,
+    "unemployment": 5.0,
+    "inflation": 3.5,
+    "gni_per_capita": 3500,
+    "revenue": {
+      "taxes": 48.0,
+      "social_contributions": 12.0,
+      "grants": 4.0,
+      "other": 36.0
+    },
+    "expenditure": {
+      "social_protection": 18.5,
+      "health": 8.0,
+      "education": 15.0,
+      "defense": 5.0,
+      "infrastructure": 16.0,
+      "public_services": 14.5,
+      "debt_service": 10.5,
+      "other": 12.5
+    },
+    "exports": 11.8,
+    "imports": 10.5,
+    "trade_balance": 1.3,
+    "exports_pct_gdp": 25.7,
+    "top_exports": [
+      "Natural Gas",
+      "Gold",
+      "Zinc",
+      "Soybeans"
+    ]
+  },
+  "oman": {
+    "gdp": 105.0,
+    "gdp_per_capita": 22000,
+    "public_debt_pct": 40.0,
+    "revenue_pct_gdp": 38.5,
+    "expense_pct_gdp": 36.8,
+    "unemployment": 2.3,
+    "inflation": 1.8,
+    "gni_per_capita": 20500,
+    "revenue": {
+      "taxes": 10.0,
+      "social_contributions": 5.5,
+      "grants": 0.0,
+      "other": 84.5
+    },
+    "expenditure": {
+      "social_protection": 15.0,
+      "health": 8.5,
+      "education": 14.0,
+      "defense": 20.0,
+      "infrastructure": 12.5,
+      "public_services": 14.0,
+      "debt_service": 8.5,
+      "other": 7.5
+    },
+    "exports": 48.5,
+    "imports": 30.2,
+    "trade_balance": 18.3,
+    "exports_pct_gdp": 46.2,
+    "top_exports": [
+      "Crude Oil",
+      "Refined Petroleum",
+      "LNG",
+      "Metals"
+    ]
+  },
+  "paraguay": {
+    "gdp": 44.0,
+    "gdp_per_capita": 5900,
+    "public_debt_pct": 36.2,
+    "revenue_pct_gdp": 22.0,
+    "expense_pct_gdp": 23.5,
+    "unemployment": 6.8,
+    "inflation": 4.5,
+    "gni_per_capita": 5600,
+    "revenue": {
+      "taxes": 62,
+      "social_contributions": 12,
+      "grants": 8,
+      "other": 18
+    },
+    "expenditure": {
+      "social_protection": 22,
+      "health": 12,
+      "education": 14,
+      "defense": 6,
+      "infrastructure": 15,
+      "public_services": 14,
+      "debt_service": 10,
+      "other": 7
+    },
+    "exports": 14.8,
+    "imports": 15.2,
+    "trade_balance": -0.4,
+    "exports_pct_gdp": 33.6,
+    "top_exports": [
+      "Soybeans",
+      "Beef",
+      "Electricity",
+      "Corn"
+    ]
+  },
+  "bahrain": {
+    "gdp": 44.0,
+    "gdp_per_capita": 27800,
+    "public_debt_pct": 120.0,
+    "revenue_pct_gdp": 22.5,
+    "expense_pct_gdp": 28.0,
+    "unemployment": 1.2,
+    "inflation": 3.2,
+    "gni_per_capita": 26500,
+    "revenue": {
+      "taxes": 12.0,
+      "social_contributions": 6.0,
+      "grants": 8.0,
+      "other": 74.0
+    },
+    "expenditure": {
+      "social_protection": 14.0,
+      "health": 7.5,
+      "education": 10.0,
+      "defense": 15.0,
+      "infrastructure": 12.0,
+      "public_services": 18.0,
+      "debt_service": 14.5,
+      "other": 9.0
+    },
+    "exports": 30.5,
+    "imports": 22.8,
+    "trade_balance": 7.7,
+    "exports_pct_gdp": 69.3,
+    "top_exports": [
+      "Refined Petroleum",
+      "Aluminum",
+      "Iron Ore",
+      "Chemicals"
+    ]
+  },
+  "honduras": {
+    "gdp": 33.0,
+    "gdp_per_capita": 3200,
+    "public_debt_pct": 52.0,
+    "revenue_pct_gdp": 19.5,
+    "expense_pct_gdp": 22.8,
+    "unemployment": 8.5,
+    "inflation": 5.5,
+    "gni_per_capita": 2800,
+    "revenue": {
+      "taxes": 65.0,
+      "social_contributions": 8.0,
+      "grants": 5.5,
+      "other": 21.5
+    },
+    "expenditure": {
+      "social_protection": 8.0,
+      "health": 8.5,
+      "education": 18.0,
+      "defense": 4.5,
+      "infrastructure": 14.0,
+      "public_services": 18.5,
+      "debt_service": 15.0,
+      "other": 13.5
+    },
+    "exports": 9.2,
+    "imports": 14.5,
+    "trade_balance": -5.3,
+    "exports_pct_gdp": 27.9,
+    "top_exports": [
+      "Coffee",
+      "Garments",
+      "Bananas",
+      "Palm Oil"
+    ]
   }
 }

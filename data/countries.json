@@ -448,5 +448,155 @@
     "name": { "en": "Senegal", "ro": "Senegal", "de": "Senegal", "fr": "Sénégal", "es": "Senegal", "pt": "Senegal", "ar": "السنغال", "zh": "塞内加尔", "ru": "Сенегал", "ja": "セネガル", "hi": "सेनेगल", "it": "Senegal" },
     "coords": [14.50, -14.45],
     "scores": { "governance": 62, "security": 58, "education": 44, "health": 46, "environment": 50, "economy": 46, "inclusion": 56, "infrastructure": 38, "innovation": 26, "equity": 36, "energy": 42, "housing": 30 }
+  },
+  {
+    "id": "dr_congo",
+    "name": { "en": "DR Congo", "de": "DR Kongo", "fr": "RD Congo", "es": "RD del Congo", "pt": "RD Congo", "it": "RD del Congo", "ro": "RD Congo", "ar": "جمهورية الكونغو الديمقراطية", "zh": "刚果民主共和国", "ru": "ДР Конго", "ja": "コンゴ民主共和国", "hi": "कांगो लोकतांत्रिक गणराज्य" },
+    "coords": [-4.04, 21.76],
+    "scores": { "governance": 12, "security": 18, "education": 28, "health": 22, "environment": 38, "economy": 20, "inclusion": 22, "infrastructure": 14, "innovation": 10, "equity": 16, "energy": 12, "housing": 14 }
+  },
+  {
+    "id": "cote_divoire",
+    "name": { "en": "Côte d'Ivoire", "de": "Elfenbeinküste", "fr": "Côte d'Ivoire", "es": "Costa de Marfil", "pt": "Costa do Marfim", "it": "Costa d'Avorio", "ro": "Coasta de Fildeș", "ar": "ساحل العاج", "zh": "科特迪瓦", "ru": "Кот-д'Ивуар", "ja": "コートジボワール", "hi": "कोत दिव्वार" },
+    "coords": [7.54, -5.55],
+    "scores": { "governance": 42, "security": 48, "education": 40, "health": 38, "environment": 46, "economy": 48, "inclusion": 40, "infrastructure": 34, "innovation": 22, "equity": 30, "energy": 36, "housing": 28 }
+  },
+  {
+    "id": "uganda",
+    "name": { "en": "Uganda", "de": "Uganda", "fr": "Ouganda", "es": "Uganda", "pt": "Uganda", "it": "Uganda", "ro": "Uganda", "ar": "أوغندا", "zh": "乌干达", "ru": "Уганда", "ja": "ウガンダ", "hi": "युगांडा" },
+    "coords": [1.37, 32.29],
+    "scores": { "governance": 38, "security": 46, "education": 44, "health": 38, "environment": 48, "economy": 46, "inclusion": 40, "infrastructure": 30, "innovation": 22, "equity": 28, "energy": 22, "housing": 24 }
+  },
+  {
+    "id": "angola",
+    "name": { "en": "Angola", "de": "Angola", "fr": "Angola", "es": "Angola", "pt": "Angola", "it": "Angola", "ro": "Angola", "ar": "أنغولا", "zh": "安哥拉", "ru": "Ангола", "ja": "アンゴラ", "hi": "अंगोला" },
+    "coords": [-11.20, 17.87],
+    "scores": { "governance": 22, "security": 46, "education": 34, "health": 30, "environment": 40, "economy": 38, "inclusion": 26, "infrastructure": 28, "innovation": 14, "equity": 22, "energy": 34, "housing": 22 }
+  },
+  {
+    "id": "mozambique",
+    "name": { "en": "Mozambique", "de": "Mosambik", "fr": "Mozambique", "es": "Mozambique", "pt": "Moçambique", "it": "Mozambico", "ro": "Mozambic", "ar": "موزمبيق", "zh": "莫桑比克", "ru": "Мозамбик", "ja": "モザンビーク", "hi": "मोज़ाम्बीक" },
+    "coords": [-18.67, 35.53],
+    "scores": { "governance": 30, "security": 38, "education": 28, "health": 26, "environment": 42, "economy": 32, "inclusion": 34, "infrastructure": 20, "innovation": 12, "equity": 22, "energy": 18, "housing": 18 }
+  },
+  {
+    "id": "cameroon",
+    "name": { "en": "Cameroon", "de": "Kamerun", "fr": "Cameroun", "es": "Camerún", "pt": "Camarões", "it": "Camerun", "ro": "Camerun", "ar": "الكاميرون", "zh": "喀麦隆", "ru": "Камерун", "ja": "カメルーン", "hi": "कैमरून" },
+    "coords": [7.37, 12.35],
+    "scores": { "governance": 28, "security": 36, "education": 46, "health": 38, "environment": 44, "economy": 40, "inclusion": 34, "infrastructure": 30, "innovation": 18, "equity": 26, "energy": 32, "housing": 26 }
+  },
+  {
+    "id": "zambia",
+    "name": { "en": "Zambia", "de": "Sambia", "fr": "Zambie", "es": "Zambia", "pt": "Zâmbia", "it": "Zambia", "ro": "Zambia", "ar": "زامبيا", "zh": "赞比亚", "ru": "Замбия", "ja": "ザンビア", "hi": "ज़ाम्बिया" },
+    "coords": [-13.13, 27.85],
+    "scores": { "governance": 50, "security": 58, "education": 48, "health": 36, "environment": 52, "economy": 42, "inclusion": 52, "infrastructure": 32, "innovation": 20, "equity": 30, "energy": 28, "housing": 26 }
+  },
+  {
+    "id": "myanmar",
+    "name": { "en": "Myanmar", "de": "Myanmar", "fr": "Myanmar", "es": "Myanmar", "pt": "Mianmar", "it": "Myanmar", "ro": "Myanmar", "ar": "ميانمار", "zh": "缅甸", "ru": "Мьянма", "ja": "ミャンマー", "hi": "म्यांमार" },
+    "coords": [21.91, 95.96],
+    "scores": { "governance": 12, "security": 18, "education": 42, "health": 44, "environment": 40, "economy": 32, "inclusion": 20, "infrastructure": 30, "innovation": 16, "equity": 24, "energy": 36, "housing": 28 }
+  },
+  {
+    "id": "sri_lanka",
+    "name": { "en": "Sri Lanka", "de": "Sri Lanka", "fr": "Sri Lanka", "es": "Sri Lanka", "pt": "Sri Lanka", "it": "Sri Lanka", "ro": "Sri Lanka", "ar": "سريلانكا", "zh": "斯里兰卡", "ru": "Шри-Ланка", "ja": "スリランカ", "hi": "श्रीलंका" },
+    "coords": [7.87, 80.77],
+    "scores": { "governance": 52, "security": 58, "education": 72, "health": 72, "environment": 56, "economy": 48, "inclusion": 48, "infrastructure": 52, "innovation": 30, "equity": 44, "energy": 50, "housing": 42 }
+  },
+  {
+    "id": "nepal",
+    "name": { "en": "Nepal", "de": "Nepal", "fr": "Népal", "es": "Nepal", "pt": "Nepal", "it": "Nepal", "ro": "Nepal", "ar": "نيبال", "zh": "尼泊尔", "ru": "Непал", "ja": "ネパール", "hi": "नेपाल" },
+    "coords": [28.39, 84.12],
+    "scores": { "governance": 46, "security": 56, "education": 50, "health": 52, "environment": 48, "economy": 38, "inclusion": 44, "infrastructure": 28, "innovation": 18, "equity": 36, "energy": 42, "housing": 32 }
+  },
+  {
+    "id": "cambodia",
+    "name": { "en": "Cambodia", "de": "Kambodscha", "fr": "Cambodge", "es": "Camboya", "pt": "Camboja", "it": "Cambogia", "ro": "Cambodgia", "ar": "كمبوديا", "zh": "柬埔寨", "ru": "Камбоджа", "ja": "カンボジア", "hi": "कंबोडिया" },
+    "coords": [12.57, 104.99],
+    "scores": { "governance": 24, "security": 56, "education": 44, "health": 50, "environment": 42, "economy": 48, "inclusion": 34, "infrastructure": 36, "innovation": 18, "equity": 34, "energy": 44, "housing": 32 }
+  },
+  {
+    "id": "ecuador",
+    "name": { "en": "Ecuador", "de": "Ecuador", "fr": "Équateur", "es": "Ecuador", "pt": "Equador", "it": "Ecuador", "ro": "Ecuador", "ar": "الإكوادور", "zh": "厄瓜多尔", "ru": "Эквадор", "ja": "エクアドル", "hi": "इक्वाडोर" },
+    "coords": [-1.83, -78.18],
+    "scores": { "governance": 52, "security": 38, "education": 60, "health": 68, "environment": 62, "economy": 50, "inclusion": 54, "infrastructure": 52, "innovation": 30, "equity": 40, "energy": 64, "housing": 46 }
+  },
+  {
+    "id": "guatemala",
+    "name": { "en": "Guatemala", "de": "Guatemala", "fr": "Guatemala", "es": "Guatemala", "pt": "Guatemala", "it": "Guatemala", "ro": "Guatemala", "ar": "غواتيمالا", "zh": "危地马拉", "ru": "Гватемала", "ja": "グアテマラ", "hi": "ग्वाटेमाला" },
+    "coords": [15.78, -90.23],
+    "scores": { "governance": 38, "security": 36, "education": 42, "health": 54, "environment": 50, "economy": 44, "inclusion": 36, "infrastructure": 40, "innovation": 22, "equity": 26, "energy": 48, "housing": 34 }
+  },
+  {
+    "id": "jamaica",
+    "name": { "en": "Jamaica", "de": "Jamaika", "fr": "Jamaïque", "es": "Jamaica", "pt": "Jamaica", "it": "Giamaica", "ro": "Jamaica", "ar": "جامايكا", "zh": "牙买加", "ru": "Ямайка", "ja": "ジャマイカ", "hi": "जमैका" },
+    "coords": [18.11, -77.30],
+    "scores": { "governance": 66, "security": 42, "education": 64, "health": 68, "environment": 56, "economy": 52, "inclusion": 62, "infrastructure": 54, "innovation": 32, "equity": 44, "energy": 52, "housing": 42 }
+  },
+  {
+    "id": "slovakia",
+    "name": { "en": "Slovakia", "de": "Slowakei", "fr": "Slovaquie", "es": "Eslovaquia", "pt": "Eslováquia", "it": "Slovacchia", "ro": "Slovacia", "ar": "سلوفاكيا", "zh": "斯洛伐克", "ru": "Словакия", "ja": "スロバキア", "hi": "स्लोवाकिया" },
+    "coords": [48.67, 19.70],
+    "scores": { "governance": 72, "security": 82, "education": 78, "health": 78, "environment": 68, "economy": 72, "inclusion": 66, "infrastructure": 76, "innovation": 62, "equity": 72, "energy": 68, "housing": 68 }
+  },
+  {
+    "id": "latvia",
+    "name": { "en": "Latvia", "de": "Lettland", "fr": "Lettonie", "es": "Letonia", "pt": "Letónia", "it": "Lettonia", "ro": "Letonia", "ar": "لاتفيا", "zh": "拉脱维亚", "ru": "Латвия", "ja": "ラトビア", "hi": "लातविया" },
+    "coords": [56.88, 24.60],
+    "scores": { "governance": 78, "security": 80, "education": 82, "health": 76, "environment": 72, "economy": 74, "inclusion": 72, "infrastructure": 76, "innovation": 64, "equity": 70, "energy": 64, "housing": 68 }
+  },
+  {
+    "id": "iraq",
+    "name": { "en": "Iraq", "de": "Irak", "fr": "Irak", "es": "Irak", "pt": "Iraque", "it": "Iraq", "ro": "Irak", "ar": "العراق", "zh": "伊拉克", "ru": "Ирак", "ja": "イラク", "hi": "इराक" },
+    "coords": [33.22, 43.68],
+    "scores": { "governance": 22, "security": 28, "education": 48, "health": 50, "environment": 32, "economy": 42, "inclusion": 26, "infrastructure": 44, "innovation": 20, "equity": 30, "energy": 56, "housing": 36 }
+  },
+  {
+    "id": "lebanon",
+    "name": { "en": "Lebanon", "de": "Libanon", "fr": "Liban", "es": "Líbano", "pt": "Líbano", "it": "Libano", "ro": "Liban", "ar": "لبنان", "zh": "黎巴嫩", "ru": "Ливан", "ja": "レバノン", "hi": "लेबनान" },
+    "coords": [33.85, 35.86],
+    "scores": { "governance": 28, "security": 30, "education": 62, "health": 66, "environment": 42, "economy": 28, "inclusion": 36, "infrastructure": 48, "innovation": 34, "equity": 34, "energy": 32, "housing": 38 }
+  },
+  {
+    "id": "kuwait",
+    "name": { "en": "Kuwait", "de": "Kuwait", "fr": "Koweït", "es": "Kuwait", "pt": "Kuwait", "it": "Kuwait", "ro": "Kuweit", "ar": "الكويت", "zh": "科威特", "ru": "Кувейт", "ja": "クウェート", "hi": "कुवैत" },
+    "coords": [29.31, 47.48],
+    "scores": { "governance": 44, "security": 78, "education": 68, "health": 76, "environment": 42, "economy": 74, "inclusion": 36, "infrastructure": 80, "innovation": 42, "equity": 48, "energy": 72, "housing": 70 }
+  },
+  {
+    "id": "papua_new_guinea",
+    "name": { "en": "Papua New Guinea", "de": "Papua-Neuguinea", "fr": "Papouasie-Nouvelle-Guinée", "es": "Papúa Nueva Guinea", "pt": "Papua-Nova Guiné", "it": "Papua Nuova Guinea", "ro": "Papua Noua Guinee", "ar": "بابوا غينيا الجديدة", "zh": "巴布亚新几内亚", "ru": "Папуа — Новая Гвинея", "ja": "パプアニューギニア", "hi": "पापुआ न्यू गिनी" },
+    "coords": [-6.31, 143.96],
+    "scores": { "governance": 38, "security": 40, "education": 32, "health": 36, "environment": 52, "economy": 36, "inclusion": 42, "infrastructure": 18, "innovation": 12, "equity": 28, "energy": 22, "housing": 20 }
+  },
+  {
+    "id": "bolivia",
+    "name": { "en": "Bolivia", "de": "Bolivien", "fr": "Bolivie", "es": "Bolivia", "pt": "Bolívia", "it": "Bolivia", "ro": "Bolivia", "ar": "بوليفيا", "zh": "玻利维亚", "ru": "Боливия", "ja": "ボリビア", "hi": "बोलीविया" },
+    "coords": [-16.29, -63.59],
+    "scores": { "governance": 46, "security": 52, "education": 58, "health": 56, "environment": 54, "economy": 44, "inclusion": 50, "infrastructure": 40, "innovation": 24, "equity": 38, "energy": 52, "housing": 38 }
+  },
+  {
+    "id": "oman",
+    "name": { "en": "Oman", "de": "Oman", "fr": "Oman", "es": "Omán", "pt": "Omã", "it": "Oman", "ro": "Oman", "ar": "عُمان", "zh": "阿曼", "ru": "Оман", "ja": "オマーン", "hi": "ओमान" },
+    "coords": [21.47, 55.98],
+    "scores": { "governance": 48, "security": 82, "education": 66, "health": 74, "environment": 46, "economy": 68, "inclusion": 34, "infrastructure": 76, "innovation": 38, "equity": 46, "energy": 70, "housing": 66 }
+  },
+  {
+    "id": "paraguay",
+    "name": { "en": "Paraguay", "de": "Paraguay", "fr": "Paraguay", "es": "Paraguay", "pt": "Paraguai", "it": "Paraguay", "ro": "Paraguay", "ar": "باراغواي", "zh": "巴拉圭", "ru": "Парагвай", "ja": "パラグアイ", "hi": "पैराग्वे" },
+    "coords": [-23.44, -58.44],
+    "scores": { "governance": 48, "security": 52, "education": 52, "health": 58, "environment": 50, "economy": 48, "inclusion": 46, "infrastructure": 42, "innovation": 24, "equity": 36, "energy": 72, "housing": 40 }
+  },
+  {
+    "id": "honduras",
+    "name": { "en": "Honduras", "de": "Honduras", "fr": "Honduras", "es": "Honduras", "pt": "Honduras", "it": "Honduras", "ro": "Honduras", "ar": "هندوراس", "zh": "洪都拉斯", "ru": "Гондурас", "ja": "ホンジュラス", "hi": "होंडुरास" },
+    "coords": [15.20, -86.24],
+    "scores": { "governance": 34, "security": 32, "education": 44, "health": 56, "environment": 48, "economy": 40, "inclusion": 38, "infrastructure": 38, "innovation": 18, "equity": 28, "energy": 48, "housing": 32 }
+  },
+  {
+    "id": "bahrain",
+    "name": { "en": "Bahrain", "de": "Bahrain", "fr": "Bahreïn", "es": "Baréin", "pt": "Barém", "it": "Bahrein", "ro": "Bahrain", "ar": "البحرين", "zh": "巴林", "ru": "Бахрейн", "ja": "バーレーン", "hi": "बहरीन" },
+    "coords": [26.07, 50.55],
+    "scores": { "governance": 36, "security": 80, "education": 72, "health": 78, "environment": 44, "economy": 72, "inclusion": 34, "infrastructure": 82, "innovation": 48, "equity": 46, "energy": 70, "housing": 68 }
   }
 ]
