@@ -104,9 +104,11 @@ function renderIndex() {
   renderGovernanceBar();
   renderPeaceBar();
   renderGlobalEconBar();
-  renderOverviewCards();
   renderTopCountries();
   renderGlobalTrade();
+  renderPressFreedom();
+  renderLifeSatisfaction();
+  renderRuleOfLaw();
   renderPillarCards();
 
   // Share bar
@@ -308,33 +310,6 @@ function scoreColor(score) {
   return '#B71C1C';
 }
 
-function renderOverviewCards() {
-  const container = document.getElementById('overview-cards');
-  if (!container) return;
-
-  // Remove previously rendered pillar cards (keep tile placeholders)
-  container.querySelectorAll('.overview-pillar-card').forEach(el => el.remove());
-
-  const avgs = Data.getGlobalAverages();
-  const pillars = Data.getPillars();
-
-  // Show first 6 pillars as overview cards
-  const html = pillars.slice(0, 6).map(p => {
-    const avg = avgs[p.id] || 0;
-    return `
-      <a href="pillar.html?id=${p.id}" class="card overview-card overview-pillar-card" style="text-decoration:none;color:inherit;border-left:4px solid ${scoreColor(avg)}">
-        <div class="card-icon">${p.icon}</div>
-        <h3 class="card-title">${I18n.t(p.name_key)}</h3>
-        <div class="card-value" style="color:${scoreColor(avg)}">${avg}/100</div>
-        <p class="card-description">${I18n.t(p.desc_key)}</p>
-        <span class="card-link">${I18n.t('pillars.explore')} &rarr;</span>
-      </a>`;
-  }).join('');
-
-  // Insert pillar cards at the beginning, before tile placeholders
-  container.insertAdjacentHTML('afterbegin', html);
-}
-
 function renderTopCountries() {
   const container = document.getElementById('top-countries-tile');
   if (!container) return;
@@ -378,6 +353,81 @@ function renderGlobalTrade() {
       <h3 class="card-title">${I18n.t('trade.global_title')}</h3>
       <div class="card-value">${fmtT(totalExports)}</div>
       <p class="card-description">${I18n.t('trade.avg_openness')}: ${avgOpenness}%</p>
+      <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
+    </a>`;
+}
+
+function renderPressFreedom() {
+  const container = document.getElementById('press-freedom-tile');
+  if (!container) return;
+
+  const politics = Data.getAllPolitics();
+  const entries = Object.entries(politics).filter(([, p]) => p.press_freedom_rank != null);
+  if (!entries.length) { container.innerHTML = ''; return; }
+
+  const avgRank = Math.round(entries.reduce((s, [, p]) => s + p.press_freedom_rank, 0) / entries.length);
+  const top5 = entries.sort((a, b) => a[1].press_freedom_rank - b[1].press_freedom_rank).slice(0, 5);
+  const topList = top5.map(([id]) => {
+    const c = Data.getCountry(id);
+    return c ? I18n.getCountryName(c) : id;
+  }).join(', ');
+
+  container.innerHTML = `
+    <a href="pillar.html?id=governance" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #7B1FA2">
+      <div class="card-icon">📰</div>
+      <h3 class="card-title">${I18n.t('press.title')}</h3>
+      <div class="card-value">#${avgRank} avg</div>
+      <p class="card-description">${topList}</p>
+      <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
+    </a>`;
+}
+
+function renderLifeSatisfaction() {
+  const container = document.getElementById('life-satisfaction-tile');
+  if (!container) return;
+
+  const politics = Data.getAllPolitics();
+  const entries = Object.entries(politics).filter(([, p]) => p.happiness_score != null);
+  if (!entries.length) { container.innerHTML = ''; return; }
+
+  const avgScore = (entries.reduce((s, [, p]) => s + p.happiness_score, 0) / entries.length).toFixed(1);
+  const top5 = entries.sort((a, b) => b[1].happiness_score - a[1].happiness_score).slice(0, 5);
+  const topList = top5.map(([id]) => {
+    const c = Data.getCountry(id);
+    return c ? I18n.getCountryName(c) : id;
+  }).join(', ');
+
+  container.innerHTML = `
+    <a href="pillar.html?id=inclusion" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #FF8F00">
+      <div class="card-icon">😊</div>
+      <h3 class="card-title">${I18n.t('satisfaction.title')}</h3>
+      <div class="card-value">${avgScore}/10</div>
+      <p class="card-description">${topList}</p>
+      <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
+    </a>`;
+}
+
+function renderRuleOfLaw() {
+  const container = document.getElementById('rule-of-law-tile');
+  if (!container) return;
+
+  const politics = Data.getAllPolitics();
+  const entries = Object.entries(politics).filter(([, p]) => p.rule_of_law != null);
+  if (!entries.length) { container.innerHTML = ''; return; }
+
+  const avgScore = (entries.reduce((s, [, p]) => s + p.rule_of_law, 0) / entries.length).toFixed(2);
+  const top5 = entries.sort((a, b) => b[1].rule_of_law - a[1].rule_of_law).slice(0, 5);
+  const topList = top5.map(([id]) => {
+    const c = Data.getCountry(id);
+    return c ? I18n.getCountryName(c) : id;
+  }).join(', ');
+
+  container.innerHTML = `
+    <a href="pillar.html?id=governance" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #1565C0">
+      <div class="card-icon">⚖️</div>
+      <h3 class="card-title">${I18n.t('justice.title')}</h3>
+      <div class="card-value">${avgScore}</div>
+      <p class="card-description">${topList}</p>
       <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
     </a>`;
 }
