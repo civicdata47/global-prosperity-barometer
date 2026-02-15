@@ -248,5 +248,26 @@
   "satisfaction.high": "Satisfăcut",
   "satisfaction.moderate": "Moderat",
   "satisfaction.low": "Nesatisfăcut",
-  "satisfaction.very_low": "Foarte nesatisfăcut"
+  "satisfaction.very_low": "Foarte nesatisfăcut",
+
+  "corruption.title": "Nivel de corupție",
+  "corruption.very_clean": "Foarte curat",
+  "corruption.clean": "Curat",
+  "corruption.moderate": "Moderat",
+  "corruption.corrupt": "Corupt",
+  "corruption.very_corrupt": "Foarte corupt",
+
+  "justice.title": "Statul de drept",
+  "justice.very_strong": "Foarte puternic",
+  "justice.strong": "Puternic",
+  "justice.moderate": "Moderat",
+  "justice.weak": "Slab",
+  "justice.very_weak": "Foarte slab",
+
+  "press.title": "Libertatea de exprimare",
+  "press.very_free": "Foarte liberă",
+  "press.free": "Liberă",
+  "press.moderate": "Moderată",
+  "press.restricted": "Restrânsă",
+  "press.very_restricted": "Foarte restrânsă"
 }

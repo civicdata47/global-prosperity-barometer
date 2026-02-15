@@ -248,5 +248,26 @@
   "satisfaction.high": "満足",
   "satisfaction.moderate": "普通",
   "satisfaction.low": "不満",
-  "satisfaction.very_low": "非常に不満"
+  "satisfaction.very_low": "非常に不満",
+
+  "corruption.title": "腐敗レベル",
+  "corruption.very_clean": "非常にクリーン",
+  "corruption.clean": "クリーン",
+  "corruption.moderate": "普通",
+  "corruption.corrupt": "腐敗",
+  "corruption.very_corrupt": "非常に腐敗",
+
+  "justice.title": "法の支配",
+  "justice.very_strong": "非常に強い",
+  "justice.strong": "強い",
+  "justice.moderate": "普通",
+  "justice.weak": "弱い",
+  "justice.very_weak": "非常に弱い",
+
+  "press.title": "言論の自由",
+  "press.very_free": "非常に自由",
+  "press.free": "自由",
+  "press.moderate": "普通",
+  "press.restricted": "制限あり",
+  "press.very_restricted": "厳しく制限"
 }

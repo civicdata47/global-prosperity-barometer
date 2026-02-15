@@ -248,5 +248,26 @@
   "satisfaction.high": "راضٍ",
   "satisfaction.moderate": "معتدل",
   "satisfaction.low": "غير راضٍ",
-  "satisfaction.very_low": "غير راضٍ جداً"
+  "satisfaction.very_low": "غير راضٍ جداً",
+
+  "corruption.title": "مستوى الفساد",
+  "corruption.very_clean": "نظيف جداً",
+  "corruption.clean": "نظيف",
+  "corruption.moderate": "معتدل",
+  "corruption.corrupt": "فاسد",
+  "corruption.very_corrupt": "فاسد جداً",
+
+  "justice.title": "سيادة القانون",
+  "justice.very_strong": "قوي جداً",
+  "justice.strong": "قوي",
+  "justice.moderate": "معتدل",
+  "justice.weak": "ضعيف",
+  "justice.very_weak": "ضعيف جداً",
+
+  "press.title": "حرية التعبير",
+  "press.very_free": "حرة جداً",
+  "press.free": "حرة",
+  "press.moderate": "معتدلة",
+  "press.restricted": "مقيّدة",
+  "press.very_restricted": "مقيّدة جداً"
 }

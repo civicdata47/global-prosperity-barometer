@@ -248,5 +248,26 @@
   "satisfaction.high": "Satisfecho",
   "satisfaction.moderate": "Moderado",
   "satisfaction.low": "Insatisfecho",
-  "satisfaction.very_low": "Muy insatisfecho"
+  "satisfaction.very_low": "Muy insatisfecho",
+
+  "corruption.title": "Nivel de corrupción",
+  "corruption.very_clean": "Muy limpio",
+  "corruption.clean": "Limpio",
+  "corruption.moderate": "Moderado",
+  "corruption.corrupt": "Corrupto",
+  "corruption.very_corrupt": "Muy corrupto",
+
+  "justice.title": "Estado de derecho",
+  "justice.very_strong": "Muy fuerte",
+  "justice.strong": "Fuerte",
+  "justice.moderate": "Moderado",
+  "justice.weak": "Débil",
+  "justice.very_weak": "Muy débil",
+
+  "press.title": "Libertad de expresión",
+  "press.very_free": "Muy libre",
+  "press.free": "Libre",
+  "press.moderate": "Moderado",
+  "press.restricted": "Restringido",
+  "press.very_restricted": "Muy restringido"
 }

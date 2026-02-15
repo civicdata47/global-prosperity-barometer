@@ -143,6 +143,12 @@ body {
     margin-top: 1.5rem;
 }
 
+/* Fixed 4-column grids */
+.grid-4x2,
+.grid-4x3 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .card {
     background: var(--white);
     border: 1px solid var(--border-gray);
@@ -515,6 +521,64 @@ body {
 
 .sat-score {
     font-size: 0.85rem;
+    color: var(--text-gray);
+    white-space: nowrap;
+}
+
+/* Indicator Meters (Corruption, Justice, Press Freedom) */
+.indicator-meters {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.indicator-meter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    border: 1px solid var(--border-gray);
+}
+
+.ind-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.ind-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    white-space: nowrap;
+    min-width: 100px;
+}
+
+.ind-bar-wrap {
+    flex: 1;
+    height: 7px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 60px;
+}
+
+.ind-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.ind-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.ind-rank {
+    font-size: 0.8rem;
     color: var(--text-gray);
     white-space: nowrap;
 }
@@ -1262,6 +1326,11 @@ body {
 
     .cards-grid {
         grid-template-columns: 1fr;
+    }
+
+    .grid-4x2,
+    .grid-4x3 {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .container {

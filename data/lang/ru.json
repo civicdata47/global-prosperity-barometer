@@ -248,5 +248,26 @@
   "satisfaction.high": "Доволен",
   "satisfaction.moderate": "Умеренно",
   "satisfaction.low": "Недоволен",
-  "satisfaction.very_low": "Очень недоволен"
+  "satisfaction.very_low": "Очень недоволен",
+
+  "corruption.title": "Уровень коррупции",
+  "corruption.very_clean": "Очень чисто",
+  "corruption.clean": "Чисто",
+  "corruption.moderate": "Умеренно",
+  "corruption.corrupt": "Коррумпировано",
+  "corruption.very_corrupt": "Очень коррумпировано",
+
+  "justice.title": "Верховенство закона",
+  "justice.very_strong": "Очень сильное",
+  "justice.strong": "Сильное",
+  "justice.moderate": "Умеренное",
+  "justice.weak": "Слабое",
+  "justice.very_weak": "Очень слабое",
+
+  "press.title": "Свобода слова",
+  "press.very_free": "Очень свободная",
+  "press.free": "Свободная",
+  "press.moderate": "Умеренная",
+  "press.restricted": "Ограниченная",
+  "press.very_restricted": "Очень ограниченная"
 }

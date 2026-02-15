@@ -248,5 +248,26 @@
   "satisfaction.high": "संतुष्ट",
   "satisfaction.moderate": "सामान्य",
   "satisfaction.low": "असंतुष्ट",
-  "satisfaction.very_low": "बहुत असंतुष्ट"
+  "satisfaction.very_low": "बहुत असंतुष्ट",
+
+  "corruption.title": "भ्रष्टाचार स्तर",
+  "corruption.very_clean": "बहुत स्वच्छ",
+  "corruption.clean": "स्वच्छ",
+  "corruption.moderate": "सामान्य",
+  "corruption.corrupt": "भ्रष्ट",
+  "corruption.very_corrupt": "बहुत भ्रष्ट",
+
+  "justice.title": "कानून का शासन",
+  "justice.very_strong": "बहुत मजबूत",
+  "justice.strong": "मजबूत",
+  "justice.moderate": "सामान्य",
+  "justice.weak": "कमजोर",
+  "justice.very_weak": "बहुत कमजोर",
+
+  "press.title": "अभिव्यक्ति की स्वतंत्रता",
+  "press.very_free": "बहुत स्वतंत्र",
+  "press.free": "स्वतंत्र",
+  "press.moderate": "सामान्य",
+  "press.restricted": "प्रतिबंधित",
+  "press.very_restricted": "बहुत प्रतिबंधित"
 }

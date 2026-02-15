@@ -90,6 +90,21 @@ function renderGovernanceBar() {
   const avgDemocracy = (entries.reduce((s, p) => s + p.democracy_score, 0) / total).toFixed(1);
   const avgCorruption = Math.round(entries.reduce((s, p) => s + p.corruption_rank, 0) / total);
   const avgPress = Math.round(entries.reduce((s, p) => s + p.press_freedom_rank, 0) / total);
+  const avgRuleOfLaw = (entries.reduce((s, p) => s + (p.rule_of_law || 0), 0) / total).toFixed(2);
+
+  // Helper to get color/label for rank-based indicators (lower = better)
+  function rankLevel(rank) {
+    if (rank <= 20) return { color: '#2E7D32', pct: 90 };
+    if (rank <= 50) return { color: '#66BB6A', pct: 72 };
+    if (rank <= 100) return { color: '#FFA726', pct: 45 };
+    if (rank <= 150) return { color: '#E53935', pct: 20 };
+    return { color: '#B71C1C', pct: 5 };
+  }
+
+  const corr = rankLevel(avgCorruption);
+  const press = rankLevel(avgPress);
+  const rolPct = Math.round(avgRuleOfLaw * 100);
+  const rolColor = rolPct >= 80 ? '#2E7D32' : rolPct >= 65 ? '#66BB6A' : rolPct >= 50 ? '#FFA726' : rolPct >= 40 ? '#E53935' : '#B71C1C';
 
   container.innerHTML = `
     <h3 class="global-section-title">${I18n.t('pol.title')}</h3>
@@ -102,6 +117,26 @@ function renderGovernanceBar() {
         <div class="gov-stat"><span class="gov-stat-value">${avgDemocracy}/10</span><span class="gov-stat-label">${I18n.t('pol.avg_democracy')}</span></div>
         <div class="gov-stat"><span class="gov-stat-value">#${avgCorruption}</span><span class="gov-stat-label">${I18n.t('pol.avg_corruption')}</span></div>
         <div class="gov-stat"><span class="gov-stat-value">#${avgPress}</span><span class="gov-stat-label">${I18n.t('pol.avg_press')}</span></div>
+      </div>
+      <div class="indicator-meters" style="margin-top:1rem;">
+        <div class="indicator-meter">
+          <span class="ind-icon">\u2728</span>
+          <span class="ind-title">${I18n.t('corruption.title')}</span>
+          <div class="ind-bar-wrap"><div class="ind-bar" style="width:${corr.pct}%;background:${corr.color}"></div></div>
+          <span class="ind-label" style="color:${corr.color}">Avg. #${avgCorruption}</span>
+        </div>
+        <div class="indicator-meter">
+          <span class="ind-icon">\u2696\uFE0F</span>
+          <span class="ind-title">${I18n.t('justice.title')}</span>
+          <div class="ind-bar-wrap"><div class="ind-bar" style="width:${rolPct}%;background:${rolColor}"></div></div>
+          <span class="ind-label" style="color:${rolColor}">Avg. ${avgRuleOfLaw}</span>
+        </div>
+        <div class="indicator-meter">
+          <span class="ind-icon">\uD83D\uDCF0</span>
+          <span class="ind-title">${I18n.t('press.title')}</span>
+          <div class="ind-bar-wrap"><div class="ind-bar" style="width:${press.pct}%;background:${press.color}"></div></div>
+          <span class="ind-label" style="color:${press.color}">Avg. #${avgPress}</span>
+        </div>
       </div>
       <div class="system-tags">${systemTags}</div>
     </div>`;
@@ -500,6 +535,69 @@ function renderCountry() {
       </div>`;
     }
 
+    // Corruption meter (rank out of ~180, lower = cleaner)
+    let corruptionHtml = '';
+    if (pol.corruption_rank != null) {
+      const cr = pol.corruption_rank;
+      let cEmoji, cKey, cColor;
+      if (cr <= 20)       { cEmoji = '\u2728'; cKey = 'corruption.very_clean'; cColor = '#2E7D32'; }
+      else if (cr <= 50)  { cEmoji = '\u2705'; cKey = 'corruption.clean'; cColor = '#66BB6A'; }
+      else if (cr <= 100) { cEmoji = '\u26A0\uFE0F'; cKey = 'corruption.moderate'; cColor = '#FFA726'; }
+      else if (cr <= 150) { cEmoji = '\uD83D\uDFE0'; cKey = 'corruption.corrupt'; cColor = '#E53935'; }
+      else                { cEmoji = '\uD83D\uDD34'; cKey = 'corruption.very_corrupt'; cColor = '#B71C1C'; }
+      const cPct = Math.max(5, Math.round((1 - cr / 180) * 100));
+      corruptionHtml = `
+      <div class="indicator-meter">
+        <span class="ind-icon">${cEmoji}</span>
+        <span class="ind-title">${I18n.t('corruption.title')}</span>
+        <div class="ind-bar-wrap"><div class="ind-bar" style="width:${cPct}%;background:${cColor}"></div></div>
+        <span class="ind-label" style="color:${cColor}">${I18n.t(cKey)}</span>
+        <span class="ind-rank">#${cr}</span>
+      </div>`;
+    }
+
+    // Rule of law meter (0-1 scale)
+    let justiceHtml = '';
+    if (pol.rule_of_law != null) {
+      const rl = pol.rule_of_law;
+      let jEmoji, jKey, jColor;
+      if (rl >= 0.80)      { jEmoji = '\u2696\uFE0F'; jKey = 'justice.very_strong'; jColor = '#2E7D32'; }
+      else if (rl >= 0.65) { jEmoji = '\u2696\uFE0F'; jKey = 'justice.strong'; jColor = '#66BB6A'; }
+      else if (rl >= 0.50) { jEmoji = '\u2696\uFE0F'; jKey = 'justice.moderate'; jColor = '#FFA726'; }
+      else if (rl >= 0.40) { jEmoji = '\u2696\uFE0F'; jKey = 'justice.weak'; jColor = '#E53935'; }
+      else                  { jEmoji = '\u2696\uFE0F'; jKey = 'justice.very_weak'; jColor = '#B71C1C'; }
+      const jPct = Math.round(rl * 100);
+      justiceHtml = `
+      <div class="indicator-meter">
+        <span class="ind-icon">${jEmoji}</span>
+        <span class="ind-title">${I18n.t('justice.title')}</span>
+        <div class="ind-bar-wrap"><div class="ind-bar" style="width:${jPct}%;background:${jColor}"></div></div>
+        <span class="ind-label" style="color:${jColor}">${I18n.t(jKey)}</span>
+        <span class="ind-rank">${rl.toFixed(2)}</span>
+      </div>`;
+    }
+
+    // Press freedom meter (rank out of ~180, lower = freer)
+    let pressHtml = '';
+    if (pol.press_freedom_rank != null) {
+      const pr = pol.press_freedom_rank;
+      let pEmoji, pKey, pColor;
+      if (pr <= 20)       { pEmoji = '\uD83D\uDCF0'; pKey = 'press.very_free'; pColor = '#2E7D32'; }
+      else if (pr <= 50)  { pEmoji = '\uD83D\uDCF0'; pKey = 'press.free'; pColor = '#66BB6A'; }
+      else if (pr <= 100) { pEmoji = '\uD83D\uDCF0'; pKey = 'press.moderate'; pColor = '#FFA726'; }
+      else if (pr <= 150) { pEmoji = '\uD83D\uDCF0'; pKey = 'press.restricted'; pColor = '#E53935'; }
+      else                { pEmoji = '\uD83D\uDCF0'; pKey = 'press.very_restricted'; pColor = '#B71C1C'; }
+      const pPct = Math.max(5, Math.round((1 - pr / 180) * 100));
+      pressHtml = `
+      <div class="indicator-meter">
+        <span class="ind-icon">${pEmoji}</span>
+        <span class="ind-title">${I18n.t('press.title')}</span>
+        <div class="ind-bar-wrap"><div class="ind-bar" style="width:${pPct}%;background:${pColor}"></div></div>
+        <span class="ind-label" style="color:${pColor}">${I18n.t(pKey)}</span>
+        <span class="ind-rank">#${pr}</span>
+      </div>`;
+    }
+
     govHtml = `
     <div class="country-gov-bar">
       <span class="gov-tag" style="border-color:${regimeColor};color:${regimeColor}">${I18n.t('pol.regime.' + pol.regime)}</span>
@@ -507,7 +605,12 @@ function renderCountry() {
       <span class="gov-tag">${I18n.t('country.democracy')}: ${pol.democracy_score}/10</span>
       <span class="gov-tag">${statusIcons[pol.conflict_status] || ''} ${I18n.t('peace.status.' + pol.conflict_status)}</span>
     </div>
-    ${satHtml}`;
+    ${satHtml}
+    <div class="indicator-meters">
+      ${corruptionHtml}
+      ${justiceHtml}
+      ${pressHtml}
+    </div>`;
   }
 
   container.innerHTML = `

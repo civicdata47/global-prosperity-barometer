@@ -248,5 +248,26 @@
   "satisfaction.high": "满意",
   "satisfaction.moderate": "一般",
   "satisfaction.low": "不满意",
-  "satisfaction.very_low": "非常不满意"
+  "satisfaction.very_low": "非常不满意",
+
+  "corruption.title": "腐败程度",
+  "corruption.very_clean": "非常清廉",
+  "corruption.clean": "清廉",
+  "corruption.moderate": "一般",
+  "corruption.corrupt": "腐败",
+  "corruption.very_corrupt": "非常腐败",
+
+  "justice.title": "法治水平",
+  "justice.very_strong": "非常强",
+  "justice.strong": "强",
+  "justice.moderate": "一般",
+  "justice.weak": "弱",
+  "justice.very_weak": "非常弱",
+
+  "press.title": "言论自由",
+  "press.very_free": "非常自由",
+  "press.free": "自由",
+  "press.moderate": "一般",
+  "press.restricted": "受限",
+  "press.very_restricted": "严重受限"
 }
