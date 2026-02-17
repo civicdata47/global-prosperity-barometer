@@ -39,6 +39,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     else if (page === 'rule-of-law') renderRuleOfLawPage();
   });
 
+  // Fixed back bar on ranking pages
+  const backLink = document.querySelector('.back-link');
+  if (backLink) {
+    const header = document.querySelector('.header');
+    const bar = document.createElement('div');
+    bar.className = 'back-bar';
+    bar.style.top = header.offsetHeight + 'px';
+    bar.innerHTML = `<a href="${backLink.getAttribute('href')}">${backLink.innerHTML}</a>`;
+    document.body.appendChild(bar);
+    // Add padding so content doesn't hide behind fixed bar
+    const content = document.querySelector('.page-content');
+    if (content) content.style.paddingTop = (header.offsetHeight + bar.offsetHeight) + 'px';
+  }
+
   // Scroll-to-top button
   const btn = document.createElement('button');
   btn.className = 'scroll-top-btn';
