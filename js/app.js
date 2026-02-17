@@ -38,6 +38,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     else if (page === 'life-satisfaction') renderLifeSatisfactionPage();
     else if (page === 'rule-of-law') renderRuleOfLawPage();
   });
+
+  // Scroll-to-top button
+  const btn = document.createElement('button');
+  btn.className = 'scroll-top-btn';
+  btn.innerHTML = '&#9650;';
+  btn.title = 'Scroll to top';
+  document.body.appendChild(btn);
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  });
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 });
 
 function _shareBarHtml() {

@@ -425,6 +425,33 @@ body {
     z-index: 100;
 }
 
+.scroll-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: var(--un-blue);
+    color: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-top-btn:hover {
+    transform: scale(1.1);
+    background: var(--dark-blue);
+}
+
 .back-link:hover {
     text-decoration: underline;
 }
