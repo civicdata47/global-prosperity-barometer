@@ -84,7 +84,7 @@
   "country.overall": "Score Mondial",
   "country.rank": "Classement Mondial",
   "country.pillar_scores": "Scores par Pilier",
-  "country.back": "Retour à l'aperçu",
+  "country.back": "Retour",
   "country.not_found": "Pays non trouvé",
   "country.democracy": "Score de démocratie",
 
@@ -93,7 +93,7 @@
   "ranking.country": "Pays",
   "ranking.score": "Score",
   "ranking.all_pillars": "Mondial",
-  "ranking.back": "Retour à l'aperçu",
+  "ranking.back": "Retour",
   "ranking.sources": "Sources de Données",
 
   "about.title": "À propos du Projet",

@@ -84,7 +84,7 @@
   "country.overall": "Punteggio Complessivo",
   "country.rank": "Classifica Mondiale",
   "country.pillar_scores": "Punteggi per Pilastro",
-  "country.back": "Torna al panorama",
+  "country.back": "Indietro",
   "country.not_found": "Paese non trovato",
   "country.democracy": "Indice di democrazia",
 
@@ -93,7 +93,7 @@
   "ranking.country": "Paese",
   "ranking.score": "Punteggio",
   "ranking.all_pillars": "Generale",
-  "ranking.back": "Torna al panorama",
+  "ranking.back": "Indietro",
   "ranking.sources": "Fonti dei Dati",
 
   "about.title": "Il Progetto",

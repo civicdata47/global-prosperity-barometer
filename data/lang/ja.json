@@ -84,7 +84,7 @@
   "country.overall": "総合スコア",
   "country.rank": "世界ランキング",
   "country.pillar_scores": "柱別スコア",
-  "country.back": "概要に戻る",
+  "country.back": "戻る",
   "country.not_found": "国が見つかりません",
   "country.democracy": "民主主義指数",
 
@@ -93,7 +93,7 @@
   "ranking.country": "国",
   "ranking.score": "スコア",
   "ranking.all_pillars": "総合",
-  "ranking.back": "概要に戻る",
+  "ranking.back": "戻る",
   "ranking.sources": "データソース",
 
   "about.title": "プロジェクトについて",

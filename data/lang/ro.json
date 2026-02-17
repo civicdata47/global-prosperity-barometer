@@ -84,7 +84,7 @@
   "country.overall": "Scor General",
   "country.rank": "Clasament Mondial",
   "country.pillar_scores": "Scoruri pe Piloni",
-  "country.back": "Înapoi la prezentare",
+  "country.back": "Înapoi",
   "country.not_found": "Țara nu a fost găsită",
   "country.democracy": "Scor democrație",
 
@@ -93,7 +93,7 @@
   "ranking.country": "Țară",
   "ranking.score": "Scor",
   "ranking.all_pillars": "General",
-  "ranking.back": "Înapoi la prezentare",
+  "ranking.back": "Înapoi",
   "ranking.sources": "Surse de Date",
 
   "about.title": "Despre Proiect",

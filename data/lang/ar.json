@@ -84,7 +84,7 @@
   "country.overall": "الدرجة الإجمالية",
   "country.rank": "التصنيف العالمي",
   "country.pillar_scores": "درجات الركائز",
-  "country.back": "العودة إلى النظرة العامة",
+  "country.back": "رجوع",
   "country.not_found": "الدولة غير موجودة",
   "country.democracy": "مؤشر الديمقراطية",
 
@@ -93,7 +93,7 @@
   "ranking.country": "الدولة",
   "ranking.score": "الدرجة",
   "ranking.all_pillars": "الإجمالي",
-  "ranking.back": "العودة إلى النظرة العامة",
+  "ranking.back": "رجوع",
   "ranking.sources": "مصادر البيانات",
 
   "about.title": "حول المشروع",

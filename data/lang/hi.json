@@ -84,7 +84,7 @@
   "country.overall": "समग्र स्कोर",
   "country.rank": "विश्व रैंक",
   "country.pillar_scores": "स्तंभ स्कोर",
-  "country.back": "अवलोकन पर वापस जाएँ",
+  "country.back": "वापस",
   "country.not_found": "देश नहीं मिला",
   "country.democracy": "लोकतंत्र सूचकांक",
 
@@ -93,7 +93,7 @@
   "ranking.country": "देश",
   "ranking.score": "स्कोर",
   "ranking.all_pillars": "समग्र",
-  "ranking.back": "अवलोकन पर वापस जाएँ",
+  "ranking.back": "वापस",
   "ranking.sources": "डेटा स्रोत",
 
   "about.title": "परियोजना के बारे में",

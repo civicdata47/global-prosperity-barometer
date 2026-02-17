@@ -84,7 +84,7 @@
   "country.overall": "总体评分",
   "country.rank": "世界排名",
   "country.pillar_scores": "支柱评分",
-  "country.back": "返回概览",
+  "country.back": "返回",
   "country.not_found": "未找到该国家",
   "country.democracy": "民主指数",
 
@@ -93,7 +93,7 @@
   "ranking.country": "国家",
   "ranking.score": "评分",
   "ranking.all_pillars": "总体",
-  "ranking.back": "返回概览",
+  "ranking.back": "返回",
   "ranking.sources": "数据来源",
 
   "about.title": "关于本项目",

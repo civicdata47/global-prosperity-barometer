@@ -84,7 +84,7 @@
   "country.overall": "Gesamtwert",
   "country.rank": "Weltweiter Rang",
   "country.pillar_scores": "Säulenwerte",
-  "country.back": "Zurück zur Übersicht",
+  "country.back": "Zurück",
   "country.not_found": "Land nicht gefunden",
   "country.democracy": "Demokratie-Index",
 
@@ -93,7 +93,7 @@
   "ranking.country": "Land",
   "ranking.score": "Wert",
   "ranking.all_pillars": "Gesamt",
-  "ranking.back": "Zurück zur Übersicht",
+  "ranking.back": "Zurück",
   "ranking.sources": "Datenquellen",
 
   "about.title": "Über das Projekt",

@@ -84,7 +84,7 @@
   "country.overall": "Общая оценка",
   "country.rank": "Мировой рейтинг",
   "country.pillar_scores": "Оценки по опорам",
-  "country.back": "Вернуться к обзору",
+  "country.back": "Назад",
   "country.not_found": "Страна не найдена",
   "country.democracy": "Индекс демократии",
 
@@ -93,7 +93,7 @@
   "ranking.country": "Страна",
   "ranking.score": "Оценка",
   "ranking.all_pillars": "Общий",
-  "ranking.back": "Вернуться к обзору",
+  "ranking.back": "Назад",
   "ranking.sources": "Источники данных",
 
   "about.title": "О проекте",

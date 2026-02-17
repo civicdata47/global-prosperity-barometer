@@ -84,7 +84,7 @@
   "country.overall": "Pontuação Geral",
   "country.rank": "Classificação Mundial",
   "country.pillar_scores": "Pontuações por Pilar",
-  "country.back": "Voltar ao panorama",
+  "country.back": "Voltar",
   "country.not_found": "País não encontrado",
   "country.democracy": "Índice de democracia",
 
@@ -93,7 +93,7 @@
   "ranking.country": "País",
   "ranking.score": "Pontuação",
   "ranking.all_pillars": "Geral",
-  "ranking.back": "Voltar ao panorama",
+  "ranking.back": "Voltar",
   "ranking.sources": "Fontes de Dados",
 
   "about.title": "Sobre o Projeto",
