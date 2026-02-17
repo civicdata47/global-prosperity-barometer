@@ -1,5 +1,5 @@
 /**
- * map.js - Leaflet map logic for World Progress Barometer
+ * map.js - Leaflet map logic for World Barometer
  * Renders country markers from data layer, supports translated popups
  */
 (async () => {

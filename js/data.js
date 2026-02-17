@@ -1,5 +1,5 @@
 /**
- * data.js - Data loader and cache for World Progress Barometer
+ * data.js - Data loader and cache for World Barometer
  * Fetches and caches countries.json + pillars.json
  */
 const Data = (() => {
