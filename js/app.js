@@ -321,8 +321,8 @@ function renderTopCountries() {
   function fmtB(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}T` : `$${v.toFixed(0)}B`; }
 
   const totalGdp = allEcon.reduce((s, d) => s + d.econ.gdp, 0);
-  const top5 = allEcon.sort((a, b) => b.econ.gdp - a.econ.gdp).slice(0, 5);
-  const topList = top5.map(d => I18n.getCountryName(d.country)).join(', ');
+  const top3 = allEcon.sort((a, b) => b.econ.gdp - a.econ.gdp).slice(0, 3);
+  const topList = top3.map(d => I18n.getCountryName(d.country)).join(', ');
 
   container.innerHTML = `
     <a href="prosperity.html" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #009edb">
@@ -366,8 +366,8 @@ function renderPressFreedom() {
   if (!entries.length) { container.innerHTML = ''; return; }
 
   const avgRank = Math.round(entries.reduce((s, [, p]) => s + p.press_freedom_rank, 0) / entries.length);
-  const top5 = entries.sort((a, b) => a[1].press_freedom_rank - b[1].press_freedom_rank).slice(0, 5);
-  const topList = top5.map(([id]) => {
+  const top3 = entries.sort((a, b) => a[1].press_freedom_rank - b[1].press_freedom_rank).slice(0, 3);
+  const topList = top3.map(([id]) => {
     const c = Data.getCountry(id);
     return c ? I18n.getCountryName(c) : id;
   }).join(', ');
@@ -391,8 +391,8 @@ function renderLifeSatisfaction() {
   if (!entries.length) { container.innerHTML = ''; return; }
 
   const avgScore = (entries.reduce((s, [, p]) => s + p.happiness_score, 0) / entries.length).toFixed(1);
-  const top5 = entries.sort((a, b) => b[1].happiness_score - a[1].happiness_score).slice(0, 5);
-  const topList = top5.map(([id]) => {
+  const top3 = entries.sort((a, b) => b[1].happiness_score - a[1].happiness_score).slice(0, 3);
+  const topList = top3.map(([id]) => {
     const c = Data.getCountry(id);
     return c ? I18n.getCountryName(c) : id;
   }).join(', ');
@@ -416,8 +416,8 @@ function renderRuleOfLaw() {
   if (!entries.length) { container.innerHTML = ''; return; }
 
   const avgScore = (entries.reduce((s, [, p]) => s + p.rule_of_law, 0) / entries.length).toFixed(2);
-  const top5 = entries.sort((a, b) => b[1].rule_of_law - a[1].rule_of_law).slice(0, 5);
-  const topList = top5.map(([id]) => {
+  const top3 = entries.sort((a, b) => b[1].rule_of_law - a[1].rule_of_law).slice(0, 3);
+  const topList = top3.map(([id]) => {
     const c = Data.getCountry(id);
     return c ? I18n.getCountryName(c) : id;
   }).join(', ');

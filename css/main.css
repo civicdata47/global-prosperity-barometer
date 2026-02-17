@@ -163,6 +163,10 @@ body {
     scroll-snap-align: start;
 }
 
+.grid-5 .overview-card {
+    height: 200px;
+}
+
 .card {
     background: var(--white);
     border: 1px solid var(--border-gray);
