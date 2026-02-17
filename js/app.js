@@ -154,7 +154,7 @@ function renderIndex() {
     shareEl.innerHTML = _shareBarHtml();
     _bindShareButtons(shareEl,
       I18n.t('share.home_text'),
-      'https://gpb-world.github.io');
+      'https://world-bar.github.io');
   }
 }
 
@@ -985,7 +985,7 @@ function renderCountry() {
   const shareEl = document.getElementById('share-bar-country');
   if (shareEl) {
     shareEl.innerHTML = _shareBarHtml();
-    const countryUrl = 'https://gpb-world.github.io/country.html?id=' + id;
+    const countryUrl = 'https://world-bar.github.io/country.html?id=' + id;
     _bindShareButtons(shareEl,
       name + ' — ' + I18n.t('share.country_text'),
       countryUrl);
@@ -1746,7 +1746,7 @@ function _renderQuizResults(container) {
     </div>`;
 
   const shareText = _tpl(I18n.t('quiz.share_text'), score) + ' 🌍';
-  const shareUrl = 'https://gpb-world.github.io/quiz.html';
+  const shareUrl = 'https://world-bar.github.io/quiz.html';
   const fullText = shareText + ' ' + shareUrl;
 
   document.getElementById('quiz-replay').addEventListener('click', () => {
