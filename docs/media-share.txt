@@ -1,8 +1,8 @@
 MEDIA SHARE — Step-by-Step Guide to Growing Website Traffic
 ==========================================================
 
-Site: https://gpb-world.github.io
-Quiz: https://gpb-world.github.io/quiz.html
+Site: https://world-bar.github.io
+Quiz: https://world-bar.github.io/quiz.html
 
 
 PHASE 1: REDDIT (Week 1–2)
@@ -25,7 +25,7 @@ Step 3: Post on r/dataisbeautiful (Day 3)
 - Go to reddit.com/r/dataisbeautiful
 - Click "Create Post" → choose "Link" post type
 - Title: I built an open-data dashboard tracking prosperity across 160 countries — no cookies, no tracking, just data
-- URL: https://gpb-world.github.io
+- URL: https://world-bar.github.io
 - Click Post
 - Immediately add a comment with the full body text (see docs/launch-posts.md)
 - Best time: weekday morning US time (= afternoon in Germany)
@@ -56,7 +56,7 @@ Step 1: Create an Account
 Step 2: Post as "Show HN" (Day 7–8)
 - Click "submit" in the top menu
 - Title: Show HN: Open-data prosperity barometer – 160 countries, 12 pillars, no tracking
-- URL: https://gpb-world.github.io
+- URL: https://world-bar.github.io
 - Leave "text" field empty
 - Click Submit
 - Best time: weekday, 8–10am US Eastern (= 2–4pm German time)
@@ -72,7 +72,7 @@ PHASE 3: DIRECT SHARING (Ongoing)
 ==================================
 
 WhatsApp Groups
-- Share the quiz link: https://gpb-world.github.io/quiz.html
+- Share the quiz link: https://world-bar.github.io/quiz.html
 - Write: "I found this interesting quiz about world affairs — I scored X/10, can you beat me?"
 - The quiz is your best hook — people love competing
 
@@ -132,4 +132,4 @@ IMPORTANT RULES
 5. Each platform has different users — adjust your angle
 6. Don't mention monetization (Buy Me a Coffee) in your posts
 7. If something doesn't get traction, don't repost — try a different angle later
-8. Track your GoatCounter stats to see what works: gpb-world.goatcounter.com
+8. Track your GoatCounter stats to see what works: world-bar.goatcounter.com

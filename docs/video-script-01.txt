@@ -1,6 +1,6 @@
 VIDEO SCRIPT #1: Top 10 Most Prosperous Countries in 2026
 ==========================================================
-Channel: GPB World
+Channel: WB World
 Duration: ~7-8 minutes
 Style: AI voiceover + animated charts/maps, no face
 Music: Soft ambient background (royalty-free)
@@ -199,7 +199,7 @@ across 12 pillars of prosperity.
 
 Explore the full rankings, compare any two countries, or test
 your knowledge with our interactive quiz — all at
-gpb-world.github.io. Link in the description.
+world-bar.github.io. Link in the description.
 
 If you enjoyed this video, subscribe for more data-driven stories
 about the world we live in."
@@ -211,7 +211,7 @@ VISUAL: Website screenshot, URL large on screen, subscribe button animation
 --------------------------
 
 VISUAL: Subscribe button + "Next video" suggestion card
-TEXT ON SCREEN: gpb-world.github.io
+TEXT ON SCREEN: world-bar.github.io
 TEXT ON SCREEN: "Next: USA vs China — Beyond GDP"
 
 
@@ -226,9 +226,9 @@ We analyzed 160 countries across 12 dimensions: governance, security,
 education, health, environment, economy, inclusion, infrastructure,
 innovation, equity, energy, and housing.
 
-Full data and interactive rankings: https://gpb-world.github.io
-Compare countries: https://gpb-world.github.io/compare.html
-Take the quiz: https://gpb-world.github.io/quiz.html
+Full data and interactive rankings: https://world-bar.github.io
+Compare countries: https://world-bar.github.io/compare.html
+Take the quiz: https://world-bar.github.io/quiz.html
 
 Data sources: World Bank, United Nations, Freedom House, V-Dem Institute,
 Transparency International, World Justice Project.

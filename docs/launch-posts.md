@@ -6,7 +6,7 @@
 
 **Body:**
 
-Been working on the Global Prosperity Barometer — an open-data platform that scores
+Been working on the World Barometer — an open-data platform that scores
 160 countries across 12 dimensions: governance, security, education, health, economy,
 environment, and more.
 
@@ -26,7 +26,7 @@ generated from real data.
 
 No ads, no cookies, no tracking, no login. All data is from public sources.
 
-https://gpb-world.github.io
+https://world-bar.github.io
 
 Feedback welcome — especially on what countries or indicators to add next.
 
@@ -48,7 +48,7 @@ V-Dem, UN sources). Every time you play, the questions are different.
 I was surprised how often I got the corruption and press freedom rankings wrong — some
 results are genuinely counterintuitive.
 
-Try it here: https://gpb-world.github.io/quiz.html
+Try it here: https://world-bar.github.io/quiz.html
 
 It's part of a larger open-data platform tracking prosperity indicators across 75
 countries. No accounts, no cookies, no tracking.
@@ -76,7 +76,7 @@ Features:
 
 Stack: Vanilla JS, no framework. Data is static JSON served from GitHub Pages.
 
-https://gpb-world.github.io
+https://world-bar.github.io
 
 I'm especially interested in feedback on:
 - What countries or indicators to add

@@ -62,7 +62,7 @@ def create_main_preview():
 
     # Title
     font_title = ImageFont.truetype(FONT_BOLD, 52)
-    center_text(draw, 'Global Prosperity Barometer', font_title, 290, WHITE)
+    center_text(draw, 'World Barometer', font_title, 290, WHITE)
 
     # Divider line
     line_w = 200
@@ -79,7 +79,7 @@ def create_main_preview():
     # Bottom bar
     draw.rectangle([0, H - 50, W, H], fill=(0, 70, 105))
     font_url = ImageFont.truetype(FONT_REG, 20)
-    center_text(draw, 'gpb-world.github.io', font_url, H - 42, LIGHT_GRAY)
+    center_text(draw, 'world-bar.github.io', font_url, H - 42, LIGHT_GRAY)
 
     img.save(os.path.join(OUT_DIR, 'og-preview.png'), 'PNG')
     print('Created og-preview.png')
@@ -120,7 +120,7 @@ def create_quiz_preview():
     # Bottom bar
     draw.rectangle([0, H - 50, W, H], fill=(0, 55, 85))
     font_url = ImageFont.truetype(FONT_REG, 20)
-    center_text(draw, 'gpb-world.github.io/quiz', font_url, H - 42, LIGHT_GRAY)
+    center_text(draw, 'world-bar.github.io/quiz', font_url, H - 42, LIGHT_GRAY)
 
     img.save(os.path.join(OUT_DIR, 'og-quiz.png'), 'PNG')
     print('Created og-quiz.png')

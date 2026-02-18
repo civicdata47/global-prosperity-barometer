@@ -1,4 +1,4 @@
-# Global Prosperity Barometer
+# World Barometer
 
 Open-data civic platform monitoring prosperity indicators across 160 countries.
 
