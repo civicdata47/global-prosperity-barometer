@@ -53,6 +53,10 @@ const CountrySelector = (() => {
     if (isOpen) {
       _close();
     } else {
+      // On mobile, move panel to body so it's not hidden inside collapsed nav
+      if (window.innerWidth <= 768 && _panel.parentElement !== document.body) {
+        document.body.appendChild(_panel);
+      }
       _panel.classList.add('open');
       _searchInput.value = '';
       _renderList();
@@ -61,7 +65,13 @@ const CountrySelector = (() => {
   }
 
   function _close() {
-    if (_panel) _panel.classList.remove('open');
+    if (!_panel) return;
+    _panel.classList.remove('open');
+    // Move panel back to its wrap if it was moved to body
+    const wrap = document.querySelector('.country-selector-wrap');
+    if (wrap && _panel.parentElement === document.body) {
+      wrap.appendChild(_panel);
+    }
   }
 
   function _outsideClick(e) {
