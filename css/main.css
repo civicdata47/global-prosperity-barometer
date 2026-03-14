@@ -2378,7 +2378,7 @@ body {
 .country-hero-img {
     width: 100%;
     height: 220px;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     border-radius: 10px;
 }
@@ -2387,12 +2387,13 @@ body {
 .rank-thumb {
     width: 28px;
     height: 20px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 3px;
     vertical-align: middle;
     margin-right: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     flex-shrink: 0;
+    background: #f0f0f0;
 }
 .rank-country-link {
     display: inline-flex;
