@@ -792,7 +792,7 @@ function renderProsperityPage() {
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('overview.top_countries')}</h1>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
-    <table class="ranking-table">
+    <div class="table-wrap"><table class="ranking-table">
       <thead>
         <tr>
           <th>${I18n.t('overview.rank')}</th>
@@ -805,7 +805,7 @@ function renderProsperityPage() {
         </tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>`;
+    </table></div>`;
 }
 
 function renderTradePage() {
@@ -865,7 +865,7 @@ function renderTradePage() {
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('trade.global_title')}</h1>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
-    <table class="ranking-table">
+    <div class="table-wrap"><table class="ranking-table">
       <thead>
         <tr>
           <th>${I18n.t('overview.rank')}</th>
@@ -878,7 +878,7 @@ function renderTradePage() {
         </tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>`;
+    </table></div>`;
 }
 
 function renderPressFreedomPage() {
@@ -928,7 +928,7 @@ function renderPressFreedomPage() {
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('overview.top_press')}</h1>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
-    <table class="ranking-table">
+    <div class="table-wrap"><table class="ranking-table">
       <thead>
         <tr>
           <th>${I18n.t('overview.rank')}</th>
@@ -939,7 +939,7 @@ function renderPressFreedomPage() {
         </tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>`;
+    </table></div>`;
 }
 
 function renderLifeSatisfactionPage() {
@@ -991,7 +991,7 @@ function renderLifeSatisfactionPage() {
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('overview.top_satisfaction')}</h1>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
-    <table class="ranking-table">
+    <div class="table-wrap"><table class="ranking-table">
       <thead>
         <tr>
           <th>${I18n.t('overview.rank')}</th>
@@ -1002,7 +1002,7 @@ function renderLifeSatisfactionPage() {
         </tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>`;
+    </table></div>`;
 }
 
 function renderRuleOfLawPage() {
@@ -1052,7 +1052,7 @@ function renderRuleOfLawPage() {
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('overview.top_rule_of_law')}</h1>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
-    <table class="ranking-table">
+    <div class="table-wrap"><table class="ranking-table">
       <thead>
         <tr>
           <th>${I18n.t('overview.rank')}</th>
@@ -1063,7 +1063,7 @@ function renderRuleOfLawPage() {
         </tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>`;
+    </table></div>`;
 }
 
 function renderPillarCards() {
@@ -1668,7 +1668,7 @@ function renderPillar() {
     <h1>${pillarIcon} ${pillarName}</h1>
     ${pillar ? `<p class="pillar-desc">${I18n.t(pillar.desc_key)}</p>` : ''}
     ${tabs}
-    <table class="ranking-table">
+    <div class="table-wrap"><table class="ranking-table">
       <thead>
         <tr>
           <th>${I18n.t('ranking.rank')}</th>
@@ -1677,7 +1677,7 @@ function renderPillar() {
         </tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>
+    </table></div>
     ${sourcesHtml}`;
 }
 
@@ -1807,10 +1807,10 @@ function renderCompare() {
     econTableHtml = `
       <div class="compare-section">
         <h2>${I18n.t('compare.econ_title')}</h2>
-        <table class="compare-econ-table">
+        <div class="table-wrap"><table class="compare-econ-table">
           <thead><tr><th></th>${headerCols}</tr></thead>
           <tbody>${rows}</tbody>
-        </table>
+        </table></div>
       </div>`;
   }
 
