@@ -2119,7 +2119,19 @@ body {
     }
 
     .econ-metrics-4 {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .econ-metrics-4 .econ-metric-label {
+        white-space: normal;
+    }
+
+    .econ-metric-value {
+        font-size: 1.2rem;
+    }
+
+    .econ-metric {
+        padding: 0.85rem;
     }
 
     .quiz-options {
