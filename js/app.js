@@ -1553,7 +1553,7 @@ function renderEconomicDashboard(country) {
   let currencyHtml = '';
   if (econ.currency_code) {
     const isUSD = econ.currency_code === 'USD';
-    const localGdpPc = isUSD ? '' : ` ≈ ${econ.currency_symbol}${(econ.gdp_per_capita * econ.usd_exchange).toLocaleString('en', {maximumFractionDigits: 0})}`;
+    const localGdpPc = isUSD ? '' : ` ≈ ${econ.currency_symbol} ${(econ.gdp_per_capita * econ.usd_exchange).toLocaleString('en', {maximumFractionDigits: 0})}`;
     currencyHtml = `
       <div class="currency-box">
         <div class="currency-main">
@@ -1562,7 +1562,7 @@ function renderEconomicDashboard(country) {
             <strong>${econ.currency_name}</strong> <span class="currency-code">(${econ.currency_code})</span>
           </div>
         </div>
-        ${!isUSD ? `<div class="currency-rate">1 USD = ${econ.currency_symbol}${econ.usd_exchange.toLocaleString('en', {maximumFractionDigits: 2})}</div>` : ''}
+        ${!isUSD ? `<div class="currency-rate">1 USD = ${econ.currency_symbol} ${econ.usd_exchange.toLocaleString('en', {maximumFractionDigits: 2})}</div>` : ''}
         ${localGdpPc ? `<div class="currency-local-gdp">${I18n.t('econ.gdp_per_capita')}: $${econ.gdp_per_capita.toLocaleString('en')}${localGdpPc}</div>` : ''}
       </div>`;
   }
