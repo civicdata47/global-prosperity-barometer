@@ -944,6 +944,25 @@ body {
     margin-bottom: 1rem;
 }
 
+.country-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, #f8fbff 0%, #f0f6ff 100%);
+    border-left: 4px solid var(--un-blue);
+    border-radius: 0 10px 10px 0;
+}
+
+.country-description p {
+    margin-bottom: 0.75rem;
+}
+
+.country-description p:last-child {
+    margin-bottom: 0;
+}
+
 .pillar-long-desc {
     font-size: 0.95rem;
     line-height: 1.7;
