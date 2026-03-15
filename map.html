@@ -47,6 +47,34 @@
             text-decoration: none; cursor: pointer;
         }
         .back-btn:hover { background: #007bb5; }
+
+        @media (max-width: 600px) {
+            .info-box {
+                top: 8px; left: 8px; right: 8px;
+                max-width: none;
+                padding: 10px 12px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 6px 12px;
+            }
+            .info-box h3 { font-size: 14px; margin: 0; }
+            .info-box p { font-size: 11px; margin: 0; }
+            .info-box .back-btn { padding: 5px 10px; font-size: 12px; margin: 0; }
+            #info-date { display: none; }
+
+            .map-legend {
+                bottom: 8px; right: 8px; left: 8px;
+                padding: 8px 12px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px 12px;
+                align-items: center;
+            }
+            .map-legend h4 { margin: 0; font-size: 12px; width: 100%; }
+            .legend-item { font-size: 11px; margin: 0; }
+            .legend-color { width: 14px; height: 14px; margin-right: 4px; }
+        }
     </style>
 </head>
 <body>

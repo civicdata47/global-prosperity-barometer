@@ -791,6 +791,7 @@ function renderProsperityPage() {
   container.innerHTML = `
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('overview.top_countries')}</h1>
+    <div class="pillar-long-desc summary-box">${I18n.t('overview.top_countries.long_desc')}</div>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
     <div class="table-wrap"><table class="ranking-table">
       <thead>
@@ -864,6 +865,7 @@ function renderTradePage() {
   container.innerHTML = `
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('trade.global_title')}</h1>
+    <div class="pillar-long-desc summary-box">${I18n.t('trade.global_title.long_desc')}</div>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
     <div class="table-wrap"><table class="ranking-table">
       <thead>
@@ -927,6 +929,7 @@ function renderPressFreedomPage() {
   container.innerHTML = `
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('overview.top_press')}</h1>
+    <div class="pillar-long-desc summary-box">${I18n.t('overview.top_press.long_desc')}</div>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
     <div class="table-wrap"><table class="ranking-table">
       <thead>
@@ -990,6 +993,7 @@ function renderLifeSatisfactionPage() {
   container.innerHTML = `
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('overview.top_satisfaction')}</h1>
+    <div class="pillar-long-desc summary-box">${I18n.t('overview.top_satisfaction.long_desc')}</div>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
     <div class="table-wrap"><table class="ranking-table">
       <thead>
@@ -1051,6 +1055,7 @@ function renderRuleOfLawPage() {
   container.innerHTML = `
     <a href="index.html#overview" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${I18n.t('overview.top_rule_of_law')}</h1>
+    <div class="pillar-long-desc summary-box">${I18n.t('overview.top_rule_of_law.long_desc')}</div>
     <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
     <div class="table-wrap"><table class="ranking-table">
       <thead>
